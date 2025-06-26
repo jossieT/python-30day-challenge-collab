@@ -4,7 +4,7 @@ Welcome to our **30-Day Python Challenge**, where two passionate learners team u
 
 ## 👥 Collaborators
 - **Yosef Teshome** – [@your-github-username](https://github.com/your-github-username)
-- **Partner Name** – [@partner-github-username](https://github.com/partner-github-username)
+- **Mulat Yazew** – [@partner-github-username](https://github.com/partner-github-username)
 
 ---
 
@@ -43,9 +43,6 @@ python-30day-challenge-collab/
 │ └── partner_feedback.md
 └── .gitignore
 
-yaml
-Copy
-Edit
 
 ---
 

@@ -49,26 +49,6 @@ We are committing to learning and practicing Python daily for 30 days, covering 
 
 ---
 
-## 📁 Repository Structure
-
-python-30day-challenge-collab/
-├── README.md # This file
-├── plan/
-│ └── month_schedule.md # Daily topic plan
-├── progress/
-│ └── progress_log.md # Daily reflections by both partners
-├── exercises/
-│ ├── day_01/
-│ │ ├── loops.py
-│ │ └── notes.md
-│ └── day_02/
-│ └── functions.py
-├── review/
-│ ├── yosef_feedback.md
-│ └── partner_feedback.md
-└── .gitignore
-
-
 ---
 
 ## 🧠 How We Work

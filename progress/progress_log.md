@@ -1,95 +1,34 @@
-# Progress Log
+📈 Progress Log – Python 30-Day Challenge
+✅ Completed 🟡 In Progress ❌ Not Started
 
-| Day | Date       | Name   | Completed Tasks | Reflections |
-|-----|------------|--------|----------------|-------------|
-| 1   |            | Yosef  |                |             |
-| 1   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 2   |            | Yosef  |                |             |
-| 2   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 3   |            | Yosef  |                |             |
-| 3   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 4   |            | Yosef  |                |             |
-| 4   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 5   |            | Yosef  |                |             |
-| 5   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 6   |            | Yosef  |                |             |
-| 6   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 7   |            | Yosef  |                |             |
-| 7   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 8   |            | Yosef  |                |             |
-| 8   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 9   |            | Yosef  |                |             |
-| 9   |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 10  |            | Yosef  |                |             |
-| 10  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 11  |            | Yosef  |                |             |
-| 11  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 12  |            | Yosef  |                |             |
-| 12  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 13  |            | Yosef  |                |             |
-| 13  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 14  |            | Yosef  |                |             |
-| 14  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 15  |            | Yosef  |                |             |
-| 15  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 16  |            | Yosef  |                |             |
-| 16  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 17  |            | Yosef  |                |             |
-| 17  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 18  |            | Yosef  |                |             |
-| 18  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 19  |            | Yosef  |                |             |
-| 19  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 20  |            | Yosef  |                |             |
-| 20  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 21  |            | Yosef  |                |             |
-| 21  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 22  |            | Yosef  |                |             |
-| 22  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 23  |            | Yosef  |                |             |
-| 23  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 24  |            | Yosef  |                |             |
-| 24  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 25  |            | Yosef  |                |             |
-| 25  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 26  |            | Yosef  |                |             |
-| 26  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 27  |            | Yosef  |                |             |
-| 27  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 28  |            | Yosef  |                |             |
-| 28  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 29  |            | Yosef  |                |             |
-| 29  |            | Mulat  |                |             |
-|-----|------------|--------|----------------|-------------|
-| 30  |            | Yosef  |                |             |
-| 30  |            | Mulat  |                |             |
-
-Add your daily reflections here!
+Day	Date	    Topic	                          Yosef 	Mulat 	Notes / Reflections
+1	YYYY-MM-DD	Introduction to Python			
+2	YYYY-MM-DD	Variables & Built-in Functions			
+3	YYYY-MM-DD	Operators			
+4	YYYY-MM-DD	Strings			
+5	YYYY-MM-DD	Lists			
+6	YYYY-MM-DD	Tuples			
+7	YYYY-MM-DD	Sets			
+8	YYYY-MM-DD	Dictionaries			
+9	YYYY-MM-DD	Conditionals			
+10	YYYY-MM-DD	Loops			
+11	YYYY-MM-DD	Functions			
+12	YYYY-MM-DD	Modules			
+13	YYYY-MM-DD	List Comprehension			
+14	YYYY-MM-DD	Higher-Order Functions			
+15	YYYY-MM-DD	Python Type Errors			
+16	YYYY-MM-DD	Python datetime Handling			
+17	YYYY-MM-DD	Exception Handling			
+18	YYYY-MM-DD	Regular Expressions			
+19	YYYY-MM-DD	File Handling			
+20	YYYY-MM-DD	Python Package Manager (pip)			
+21	YYYY-MM-DD	Classes & Objects			
+22	YYYY-MM-DD	Web Scraping			
+23	YYYY-MM-DD	Virtual Environments			
+24	YYYY-MM-DD	Statistics with Python			
+25	YYYY-MM-DD	Pandas (Data Analysis)			
+26	YYYY-MM-DD	Python for Web (Flask/Django)			
+27	YYYY-MM-DD	Python with MongoDB			
+28	YYYY-MM-DD	Working with APIs			
+29	YYYY-MM-DD	Building APIs			
+30	YYYY-MM-DD	Wrap-up & Next Steps			

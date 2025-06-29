@@ -3,8 +3,8 @@
 Welcome to our **30-Day Python Challenge**, where two passionate learners team up to master Python — one day, one topic at a time.
 
 ## 👥 Collaborators
-- **Yosef Teshome** – [@Yosef Teshome](https://github.com/jossieT)
-- **Mulat Yazew** – [@Mulat Yazew](https://github.com/MulatYazew)
+- **Yosef Teshome** – [@jossieT](https://github.com/jossieT)
+- **Mulat Yazew** – [@MulatYazew](https://github.com/MulatYazew)
 ---
 
 ## 📅 Challenge Overview

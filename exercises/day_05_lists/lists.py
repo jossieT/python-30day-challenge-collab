@@ -1,7 +1,15 @@
 # List Exercises – Day 5
+<<<<<<< HEAD
 # Level 1
 # 1. Declare an empty list
 empty_list = []
+=======
+
+# 1. Declare an empty list
+empty_list = []
+print('Empty list:', empty_list)
+print('-' * 40)
+>>>>>>> c1aea7c (day 04 exercises on string complete)
 
 # 2. Declare a list with more than 5 items
 fruits = ['apple', 'banana', 'orange', 'mango', 'grape', 'kiwi']
@@ -13,9 +21,15 @@ print('Number of fruits:', len(fruits))
 print('-' * 40)
 
 # 4. Get the first, middle, and last items
+<<<<<<< HEAD
 print('First fruit:', fruits[0]) # First item
 print('Middle fruit:', fruits[len(fruits)//2]) # Middle item
 print('Last fruit:', fruits[-1]) # Last item
+=======
+print('First fruit:', fruits[0])
+print('Middle fruit:', fruits[len(fruits)//2])
+print('Last fruit:', fruits[-1])
+>>>>>>> c1aea7c (day 04 exercises on string complete)
 print('-' * 40)
 
 # 5. Declare a list called mixed_data_types
@@ -62,12 +76,21 @@ it_companies[1] = it_companies[1].upper()
 print('After uppercase:', it_companies)
 print('-' * 40)
 
+<<<<<<< HEAD
 # 14. Join the companies with a string '#'
 print('Companies joined:', ' # '.join(it_companies))
 print('-' * 40)
 
 # 15. Check if a company exists
 print('Is Google in the list?', 'Google' in it_companies) # prints True or False
+=======
+# 14. Join the companies with a string
+print('Companies joined:', ' | '.join(it_companies))
+print('-' * 40)
+
+# 15. Check if a company exists
+print('Is Google in the list?', 'Google' in it_companies)
+>>>>>>> c1aea7c (day 04 exercises on string complete)
 print('-' * 40)
 
 # 16. Sort the list
@@ -118,8 +141,14 @@ print('After clearing:', it_companies)
 print('-' * 40)
 
 # 25. Delete the list
+<<<<<<< HEAD
 del it_companies  # delete company
 
+=======
+# del it_companies  # Uncomment to delete
+print('List deleted (commented out for safety)')
+print('-' * 40)
+>>>>>>> c1aea7c (day 04 exercises on string complete)
 
 # 26. Join front_end and back_end lists
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
@@ -156,6 +185,7 @@ print('-' * 40)
 
 # 4. Find the median age
 ages.sort()
+<<<<<<< HEAD
 n = len(ages)
 if n % 2 == 0:
     median = (ages[n//2 - 1] + ages[n//2]) / 2
@@ -163,6 +193,14 @@ else:
     median = ages[n//2]
 
 print("Median age:", median)
+=======
+mid = len(ages) // 2
+if len(ages) % 2 == 0:
+    median = (ages[mid - 1] + ages[mid]) / 2
+else:
+    median = ages[mid]
+print('Median age:', median)
+>>>>>>> c1aea7c (day 04 exercises on string complete)
 print('-' * 40)
 
 # 5. Find the average age

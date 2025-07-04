@@ -1,9 +1,7 @@
 # List Exercises – Day 5
-
+# Level 1
 # 1. Declare an empty list
 empty_list = []
-print('Empty list:', empty_list)
-print('-' * 40)
 
 # 2. Declare a list with more than 5 items
 fruits = ['apple', 'banana', 'orange', 'mango', 'grape', 'kiwi']
@@ -15,9 +13,9 @@ print('Number of fruits:', len(fruits))
 print('-' * 40)
 
 # 4. Get the first, middle, and last items
-print('First fruit:', fruits[0])
-print('Middle fruit:', fruits[len(fruits)//2])
-print('Last fruit:', fruits[-1])
+print('First fruit:', fruits[0]) # First item
+print('Middle fruit:', fruits[len(fruits)//2]) # Middle item
+print('Last fruit:', fruits[-1]) # Last item
 print('-' * 40)
 
 # 5. Declare a list called mixed_data_types
@@ -64,12 +62,12 @@ it_companies[1] = it_companies[1].upper()
 print('After uppercase:', it_companies)
 print('-' * 40)
 
-# 14. Join the companies with a string
-print('Companies joined:', ' | '.join(it_companies))
+# 14. Join the companies with a string '#'
+print('Companies joined:', ' # '.join(it_companies))
 print('-' * 40)
 
 # 15. Check if a company exists
-print('Is Google in the list?', 'Google' in it_companies)
+print('Is Google in the list?', 'Google' in it_companies) # prints True or False
 print('-' * 40)
 
 # 16. Sort the list
@@ -120,9 +118,8 @@ print('After clearing:', it_companies)
 print('-' * 40)
 
 # 25. Delete the list
-# del it_companies  # Uncomment to delete
-print('List deleted (commented out for safety)')
-print('-' * 40)
+del it_companies  # delete company
+
 
 # 26. Join front_end and back_end lists
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
@@ -159,12 +156,13 @@ print('-' * 40)
 
 # 4. Find the median age
 ages.sort()
-mid = len(ages) // 2
-if len(ages) % 2 == 0:
-    median = (ages[mid - 1] + ages[mid]) / 2
+n = len(ages)
+if n % 2 == 0:
+    median = (ages[n//2 - 1] + ages[n//2]) / 2
 else:
-    median = ages[mid]
-print('Median age:', median)
+    median = ages[n//2]
+
+print("Median age:", median)
 print('-' * 40)
 
 # 5. Find the average age

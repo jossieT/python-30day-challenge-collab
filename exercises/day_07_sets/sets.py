@@ -38,7 +38,11 @@ del A, B, it_companies
 age_set = set(age)
 print(f'list with length {len(age)} is greater than set with length {len(age_set)} because set does not allow duplicate elements.')
 #2. Explain the difference between the following data types: string, list, tuple and set
+"""
+strings are immutable sequences of characters, while lists are mutable sequences that can contain elements of different types.
+Tuples are immutable sequences, similar to lists, but cannot be changed after creation. Sets are unordered collections of unique elements.
+"""
 #3. I am a teacher and I love to inspire and teach people. 
 # How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
 sentence = 'I am a teacher and I love to inspire and teach people'
-print(f'In the above sentence, {len(sentence.split())} unique words are used')
+print(f'In the above sentence, {len(set(sentence.split()))} unique words are used')

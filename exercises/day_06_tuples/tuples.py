@@ -19,7 +19,7 @@ parents = family_members[6:8]
 fruits = ('lemon', 'orange', 'pinapple')
 vegetables = ('cabbage', 'potato', 'tomato', 'banana')
 animal_products = ('yogouhrt', 'milk', 'chease', 'meat')
-food_stuff_tp = fruits + vegetables +animal_products
+food_stuff_tp = fruits + vegetables + animal_products
 #3. Change the about food_stuff_tp tuple to a food_stuff_lt list
 food_stuff_list = list(food_stuff_tp)
 #4. Slice out the middle item or items from the food_stuff_tp tuple or food_stuff_lt list.

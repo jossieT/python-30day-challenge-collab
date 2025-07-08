@@ -142,8 +142,8 @@ if skills_set == frontend_set:
     print('He is a front end developer')
 elif backend_set.issubset(skills_set):
     print('He is a backend developer')
-    if fullstack_set.issubset(skills_set):
-        print('He is a fullstack developer')
+elif fullstack_set.issubset(skills_set):
+    print('He is a fullstack developer')
 else:
     print('Unknown title')
 #1.4 If the person is married and if he lives in Finland, print the information in the following format:

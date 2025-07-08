@@ -89,7 +89,7 @@ fruits = ['banana', 'orange', 'mango', 'lemon']
 """"
 If a fruit doesn't exist in the list add the fruit to the list and print the modified list. 
 If the fruit exists print('That fruit already exist in the list')"""
-user_fruit = input("Enter a fruite:")
+user_fruit = input("Enter a fruit:")
 if user_fruit in fruits:
     print(f'fruit {user_fruit} already exist in the list')
 else:
@@ -102,7 +102,7 @@ person={
     'last_name': 'Yetayeh',
     'age': 250,
     'country': 'Finland',
-    'is_marred': True,
+    'is_married': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': 'Space street',
@@ -129,9 +129,9 @@ if 'skills' in person and isinstance(person["skills"], list) and person["skills"
 
     if skills == ['JavaScript', 'React']:
         print('He is a front end developer')
-    elif skills == ['Node', 'Python', 'MongoDB']:
+    if 'Node' and 'Python' and 'MongoDB' in skills:
         print('He is a backend developer')
-    elif skills == ['React', 'Node', 'MongoDB']:
+    if 'React'and 'Node'and 'MongoDB' in skills:
         print('He is a fullstack developer')
     else:
         print('unknown title')

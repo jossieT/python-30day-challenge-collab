@@ -152,36 +152,39 @@ print(reverse_fruit_list)
 file_path = os.path.abspath('exercises/data/countries-data.py')
 
 # Read the content and evaluate it as Python list
-with open(file_path, 'r', encoding='utf-8') as f:
-    content = f.read()
-    countries_data = eval(content)  # Safe here since you're reading your own data
+try:   
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+        countries_data = eval(content)  # Safe here since you're reading your own data
 
-language_counter = []
-languages_dict = {}
-for country in countries_data:
-    languages = country['languages']
-    for i in range(len(languages)):
-        language_counter.append(languages[i])
-# Display the total number of languages in the data
-print(f'✅The total number of languages in the data are {len(language_counter)}')
-for i in range(len(language_counter)):
-    if language_counter[i] in languages_dict:
-        languages_dict[language_counter[i]] += 1
-    else:
-        languages_dict[language_counter[i]] = 1
-# Displaying the total number of unique languages in the data    
-print(f'✅The total number of unique languages in the data are: {len(languages_dict)}')
+    language_counter = []
+    languages_dict = {}
+    for country in countries_data:
+        languages = country['languages']
+        for i in range(len(languages)):
+            language_counter.append(languages[i])
+    # Display the total number of languages in the data
+    print(f'✅The total number of languages in the data are {len(language_counter)}')
+    for i in range(len(language_counter)):
+        if language_counter[i] in languages_dict:
+            languages_dict[language_counter[i]] += 1
+        else:
+            languages_dict[language_counter[i]] = 1
+    # Displaying the total number of unique languages in the data    
+    print(f'✅The total number of unique languages in the data are: {len(languages_dict)}')
 
-# Displaying the ten most spoken languages in the data
-sorted_languages = dict(sorted(languages_dict.items(), key=lambda item: item[1], reverse=True))
-print(sorted_languages)
-print(f'✅The ten most spoken languages are: {list(sorted_languages.keys())[:10]}')
+    # Displaying the ten most spoken languages in the data
+    sorted_languages = dict(sorted(languages_dict.items(), key=lambda item: item[1], reverse=True))
+    print(sorted_languages)
+    print(f'✅The ten most spoken languages are: {list(sorted_languages.keys())[:10]}')
 
-unique_languages = set()
-for country in countries_data:
-    unique_languages.update(country['languages'])
+    unique_languages = set()
+    for country in countries_data:
+        unique_languages.update(country['languages'])
 
-print("✅ Total number of unique languages:", len(unique_languages))
+    print("✅ Total number of unique languages:", len(unique_languages))
+except FileNotFoundError:
+    print(f"File not found: {file_path}")
     
 
 

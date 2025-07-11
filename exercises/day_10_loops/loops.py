@@ -1,7 +1,6 @@
 from countries import countries
 import json
 
-from countries import countries
 #Exercises: Day 10
 #Exercises: Level 1
 #1. Iterate 0 to 10 using for loop, do the same using while loop.

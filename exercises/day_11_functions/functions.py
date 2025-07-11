@@ -1,3 +1,4 @@
+from countries import countries
 import math
 import keyword
 import json
@@ -300,21 +301,18 @@ print(is_valid_variable("for"))
 #4. go to the data folder and access the countries-data.py file.
 #Create a function called the most_spoken_languages in the world. It should return 
 #10 or 20 most spoken languages in the world in descending order
-countries = []
+
 with open('exercises/day_10_loops/countries_data.json', 'r', encoding='utf-8') as f:
     countries_data = json.load(f)
-    countries = countries_data['countries']
 
-def most_spoken_languages(countries):
+def most_spoken_languages(countries_data):
     most_spoken_languages = {}
-    for country in countries:
+    for country in countries_data:
         for language in country['languages']:
             if language in most_spoken_languages:
                 most_spoken_languages[language] += 1
             else:
                 most_spoken_languages[language] = 1
-        else:
-            most_spoken_languages[language] = 1
 
     language_counts = list(most_spoken_languages.items())
     for i in range(len(language_counts)):
@@ -324,13 +322,13 @@ def most_spoken_languages(countries):
     most_spoken_languages = language_counts[:10]
     return most_spoken_languages
 
-
+print('Most spoken languages:', most_spoken_languages(countries_data))
 
 #Create a function called the most_populated_countries. 
 # It should return 10 or 20 most populated countries in descending order.
-def most_populated_countries(countries):
+def most_populated_countries(countries_data):
     most_populated_countries = {}
-    for country in countries:
+    for country in countries_data:
         most_populated_countries[country['name']] = country['population']
 
     population_counts = list(most_populated_countries.items())
@@ -340,3 +338,5 @@ def most_populated_countries(countries):
                 population_counts[i], population_counts[j] = population_counts[j], population_counts[i]
     most_populated_countries = population_counts[:10]
     return most_populated_countries
+
+print('Most populated countries:', most_populated_countries(countries_data))

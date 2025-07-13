@@ -1,0 +1,77 @@
+{
+    "MYC673": {
+        "first_name": "Mulat",
+        "second_name": "Yazew",
+        "last_name": "Chekol",
+        "age": 19,
+        "class": "12C",
+        "login_access": [
+            "AGT/5434/10",
+            "Admin@1832"
+        ],
+
+        "subjects": {
+            "Math": 92,
+            "English": 91,
+            "Physics": 92,
+            "Chemistry": 98,
+            "Biology": 92,
+            "Civics": 91,
+            "IT": 90,
+            "TD": 85,
+            "HPE": 93,
+            "Amharic": 89
+        },
+
+        "Teachers":{
+            "Asfaw Yeanealem": "Introduction to Financial Management",
+            "Gebreyehonnes": "IT",
+            "Yosef Teshome": ["React", "JavaScript"] 
+        },
+
+        "Admin":{
+            "MulatYazew": "Admin@aau209",
+            "YosefTeshome": "Admin@aau209"
+        },
+
+        "high school": [
+            "Injibrara Secondary and Preparatory School", 
+            "Amhara region", "Injibara city"
+        ],
+        "primary school": "Askuna General Primary School",
+
+        "courses": {
+            "Statics": [87, "A"],
+            "Introduction to Programming": [83, "A"],
+            "Sophomer": [78, "B+"],
+            "Technical Drawing": [77, "B+"],
+            "Basic Electrical Circuits": [90, "A"],
+            "Introduction To Thermodynamics": [89, "A"]
+        },
+
+        "university": "Addis Abbaba Institute of Technology, Addis Ababa University",
+        "department": "Electrical and Computer Engineering",
+        "average": 91.3,
+        "GPA": 3.91,
+        "CGPA": 3.89,
+        "grade": "A",
+        "status": ["Passed"],
+        "email": "mul.ya234@gmail.com",
+        "phone number": "+251989932345",
+        "contact info": {
+            "first_name_contact_person": "Asfaw Yenealem", 
+            "last_name_contact_person": "Biresaw", 
+            "Phone_number": "+251926384984", 
+            "email": "asfaw.yene@gmail.com"
+        },
+        "notes": "Mulat is exceptionally talented student in our school.",
+        "nationality": "Ethiopian",
+        "languages": ["Amharic", "Awigna", "English", "Ge'ez"],
+        "Member": ["ESSS", "SoTA", "EEEA"],
+        "scholarship": ["full"],
+        "family": ["Yazew Chekol Guadie", "Azeneg Kassa Zeru"],
+        "marital status": "single"
+
+    }
+
+}

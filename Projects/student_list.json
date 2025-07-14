@@ -4,74 +4,261 @@
         "second_name": "Yazew",
         "last_name": "Chekol",
         "age": 19,
-        "class": "12C",
-        "login_access": [
-            "AGT/5434/10",
-            "Admin@1832"
-        ],
-
-        "subjects": {
-            "Math": 92,
-            "English": 91,
-            "Physics": 92,
-            "Chemistry": 98,
-            "Biology": 92,
-            "Civics": 91,
-            "IT": 90,
-            "TD": 85,
-            "HPE": 93,
-            "Amharic": 89
-        },
-
-        "Teachers":{
-            "Asfaw Yeanealem": "Introduction to Financial Management",
-            "Gebreyehonnes": "IT",
-            "Yosef Teshome": ["React", "JavaScript"] 
-        },
-
-        "Admin":{
-            "MulatYazew": "Admin@aau209",
-            "YosefTeshome": "Admin@aau209"
-        },
-
-        "high school": [
-            "Injibrara Secondary and Preparatory School", 
-            "Amhara region", "Injibara city"
-        ],
-        "primary school": "Askuna General Primary School",
-
-        "courses": {
-            "Statics": [87, "A"],
-            "Introduction to Programming": [83, "A"],
-            "Sophomer": [78, "B+"],
-            "Technical Drawing": [77, "B+"],
-            "Basic Electrical Circuits": [90, "A"],
-            "Introduction To Thermodynamics": [89, "A"]
-        },
-
-        "university": "Addis Abbaba Institute of Technology, Addis Ababa University",
-        "department": "Electrical and Computer Engineering",
-        "average": 91.3,
-        "GPA": 3.91,
-        "CGPA": 3.89,
-        "grade": "A",
-        "status": ["Passed"],
+        "gender": "Male",
+        "birth_date": "2004-05-15",
         "email": "mul.ya234@gmail.com",
         "phone number": "+251989932345",
         "contact info": {
-            "first_name_contact_person": "Asfaw Yenealem", 
-            "last_name_contact_person": "Biresaw", 
-            "Phone_number": "+251926384984", 
+            "first_name_contact_person": "Asfaw Yenealem",
+            "last_name_contact_person": "Biresaw",
+            "phone number": "+251926384984",
             "email": "asfaw.yene@gmail.com"
+            },
+        "address": {
+            "region": "Addis Ababa",
+            "city": "Addis Ababa",
+            "sub_city": "Bole",
+            "woreda": "Woreda 12",
+            "kebele": "Kebele 03",
+            "house_number": "HNo. 45",
+            "street": "Bole Medhanealem"
         },
-        "notes": "Mulat is exceptionally talented student in our school.",
-        "nationality": "Ethiopian",
-        "languages": ["Amharic", "Awigna", "English", "Ge'ez"],
-        "Member": ["ESSS", "SoTA", "EEEA"],
-        "scholarship": ["full"],
-        "family": ["Yazew Chekol Guadie", "Azeneg Kassa Zeru"],
-        "marital status": "single"
+            "nationality": "Ethiopian",
+            "languages": [
+                "Amharic",
+                "Awigna",
+                "English",
+                "Ge'ez"
+            ],
+            "Member": [
+                "ESSS",
+                "SoTA",
+                "EEEA"
+            ],
+            "scholarship": [
+                "full"
+            ],
+            "family": [
+                "Yazew Chekol Guadie",
+                "Azeneg Kassa Zeru"
+            ],
+            "marital status": "single",
 
+        "courses": {
+            "university_name": "Addis Ababa University",
+            "College": "Addis Ababa Institute of Technology",
+            "department": "Electrical and Computer Engineering",
+            "registration_year": "2016",
+            "degree Level": "Bachelor of Science",
+            "login_access": [
+                "MYC/5434/10",
+                "Admin@1832"
+            ],
+            "stream": "Computer Engineering",
+            "CGPA": 3.89,
+            "Year 1": {
+                "Semester 1": {
+
+                    "GPA": 3.91,
+                    "CGPA": 3.89,
+                    "Introduction to Programming": [
+                        70,
+                        "B"
+                    ],
+                    "Engineering Mechanics": [
+                        77,
+                        "B+"
+                    ],
+                    "Sophomer": [
+                        81,
+                        "A-"
+                    ],
+                    "Technical Drawing": [
+                        77,
+                        "B+"
+                    ]
+                },
+                "Semester 2": {
+                    "GPA": 3.91,
+                    "CGPA": 3.89,
+                    "Basic Electrical Circuits": [
+                        83,
+                        "A"
+                    ],
+                    "Introduction To Thermodynamics": [
+                        89,
+                        "A"
+                    ],
+                    "Writing Skills": [
+                        82,
+                        "A-"
+                    ],
+                    "Introduction to Economics": [
+                        82,
+                        "A-"
+                    ],
+                    "Introduction to Logic and Reasoning": [
+                        76,
+                        "B+"
+                    ]
+                },
+                "Year 2": {
+                    "Semester 1": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Digital Logic Design": [
+                            88,
+                            "A"
+                        ],
+                        "Signals and Systems": [
+                            90,
+                            "A"
+                        ],
+                        "Electromagnetic Fields": [
+                            85,
+                            "A-"
+                        ],
+                        "Circuit Analysis": [
+                            87,
+                            "A"
+                        ]
+                    },
+                    "Semester 2": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Microprocessors": [
+                            90,
+                            "A"
+                        ],
+                        "Control Systems": [
+                            88,
+                            "A"
+                        ],
+                        "Power Systems": [
+                            86,
+                            "A-"
+                        ],
+                        "Digital Signal Processing": [
+                            89,
+                            "A"
+                        ]
+                    }
+                },
+                
+                "Year 3": {
+                    "Semester 1": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Communication Systems": [
+                            91,
+                            "A"
+                        ],
+                        "Embedded Systems": [
+                            92,
+                            "A"
+                        ],
+                        "Renewable Energy Systems": [
+                            90,
+                            "A"
+                        ],
+                        "Advanced Circuit Design": [
+                            88,
+                            "A"
+                        ]
+                    },
+                    "Semester 2": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Robotics": [
+                            93,
+                            "A"
+                        ],
+                        "Machine Learning": [
+                            94,
+                            "A"
+                        ],
+                        "Data Structures and Algorithms": [
+                            90,
+                            "A"
+                        ],
+                        "Software Engineering": [
+                            89,
+                            "A"
+                        ]
+                    }
+                },
+                "Year 4": {
+                    "Semester 1": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "VLSI Design": [
+                            95,
+                            "A"
+                        ],
+                        "Computer Networks": [
+                            92,
+                            "A"
+                        ],
+                        "Artificial Intelligence": [
+                            91,
+                            "A"
+                        ],
+                        "Project Management": [
+                            90,
+                            "A"
+                        ]
+                    },
+                    "Semester 2": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Capstone Project": [
+                            96,
+                            "A"
+                        ],
+                        "Advanced Topics in Electrical Engineering": [
+                            93,
+                            "A"
+                        ],
+                        "Professional Ethics in Engineering": [
+                            94,
+                            "A"
+                        ]
+                    }
+                },
+                "Year 5": {
+                    "Semester 1": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Thesis": [
+                            97,
+                            "A"
+                        ],
+                        "Advanced Control Systems": [
+                            95,
+                            "A"
+                        ],
+                        "Smart Grid Technologies": [
+                            94,
+                            "A"
+                        ]
+                    },
+                    "Semester 2": {
+                        "GPA": 3.91,
+                        "CGPA": 3.89,
+                        "Internship": [
+                            98,
+                            "A"
+                        ],
+                        "Engineering Management": [
+                            96,
+                            "A"
+                        ]
+                    }
+                }
+            }            
+           
+        }
     }
-
 }
+
+

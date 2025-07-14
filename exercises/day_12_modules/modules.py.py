@@ -1,4 +1,19 @@
 import random
+import string
+#1. Writ a function which generates a six digit/character random_user_id
+
+def random_user_id(length:int):
+    characters = string.ascii_letters + string.digits  # A-Z, a-z, 0-9
+    return ''.join(random.choices(characters, k=length))
+
+def user_id_gen_by_user():
+    num1 = int(input("How random id's do you want to generate:"))
+    num2 = int(input("What is length of your random id:"))
+    print("#Output:")
+    i = 0
+    while i <= num1:
+        print(f'#{random_user_id(num2)}')
+        i += 1
 #3.Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
 def rgb_color_gen():
     rgb_colors = []

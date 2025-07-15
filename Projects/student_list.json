@@ -8,6 +8,10 @@
         "birth_date": "2004-05-15",
         "email": "mul.ya234@gmail.com",
         "phone number": "+251989932345",
+        "login_credentials": {
+                "username": "MYC/5434/10",
+                "password": "$2b$12$p1YXO1HKElFQzbqxUFmmreWsjNzIg9PVeWJMWNTbpuHUJLsgtLPwS"
+            },
         "contact info": {
             "first_name_contact_person": "Asfaw Yenealem",
             "last_name_contact_person": "Biresaw",
@@ -45,220 +49,222 @@
             "marital status": "single",
 
         "courses": {
-            "university_name": "Addis Ababa University",
-            "College": "Addis Ababa Institute of Technology",
-            "department": "Electrical and Computer Engineering",
-            "registration_year": "2016",
-            "degree Level": "Bachelor of Science",
-            "login_access": [
-                "MYC/5434/10",
-                "Admin@1832"
-            ],
-            "stream": "Computer Engineering",
-            "CGPA": 3.89,
+            
             "Year 1": {
                 "Semester 1": {
-
-                    "GPA": 3.91,
-                    "CGPA": 3.89,
-                    "Introduction to Programming": [
-                        70,
-                        "B"
-                    ],
-                    "Engineering Mechanics": [
-                        77,
-                        "B+"
-                    ],
-                    "Sophomer": [
-                        81,
-                        "A-"
-                    ],
-                    "Technical Drawing": [
-                        77,
-                        "B+"
-                    ]
+                    
+                    "Applied Mathematics I": {
+                        "ECTS": 7
+                    },
+                    "Introduction to Engineering Profession":{
+                        "ECTS": 2
+                    },
+                    "Engineering Drawing": {
+                        "ECTS": 6
+                    },
+                    "Communicative English": {
+                        "ECTS": 5
+                    },
+                    "Engineering Mechanics I (Statics)": {
+                        "ECTS": 6
+                    },
+                    "Civics and Ethical Education":{
+                        "ECTS": 5
+                    }
                 },
                 "Semester 2": {
-                    "GPA": 3.91,
-                    "CGPA": 3.89,
-                    "Basic Electrical Circuits": [
-                        83,
-                        "A"
-                    ],
-                    "Introduction To Thermodynamics": [
-                        89,
-                        "A"
-                    ],
-                    "Writing Skills": [
-                        82,
-                        "A-"
-                    ],
-                    "Introduction to Economics": [
-                        82,
-                        "A-"
-                    ],
-                    "Introduction to Logic and Reasoning": [
-                        76,
-                        "B+"
-                    ]
-                },
+                    
+                    "Electrical Engineering Lab I": {
+                        "ECTS": 2
+                    },
+                    "Introduction to Logic": {
+                        "ECTS": 5
+                    },
+                    "Basic Writing Skills": {
+                        "ECTS": 5
+                    },
+                    "Applied Mathematics II": {
+                        "ECTS": 7
+                    },
+                    "Introduction to Economics": {
+                        "ECTS": 5
+                    },
+                    "Engineering Mechanics II (Dynamics)": {
+                        "ECTS": 6
+                    },
+                    "Fundamentals of Circuits": {
+                        "ECTS": 6
+                    }
+                }
+            },
                 "Year 2": {
                     "Semester 1": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Digital Logic Design": [
-                            88,
-                            "A"
-                        ],
-                        "Signals and Systems": [
-                            90,
-                            "A"
-                        ],
-                        "Electromagnetic Fields": [
-                            85,
-                            "A-"
-                        ],
-                        "Circuit Analysis": [
-                            87,
-                            "A"
-                        ]
+                    
+                        "Introduction to Computing": {
+                            "ECTS": 5
+                        },
+                        "Applied Modern Physics": {
+                            "ECTS": 5
+                        },
+                        "Electrical Workshop Practice I": {
+                            "ECTS": 3
+                        },
+                        "Electrical Engineering Lab II"{
+                            "ECTS": 3
+                        },
+
+                        "Applied Engineering Mathematics III": {
+                        "ECTS": 7
+                        },
+                        "Applied Electronics I":{
+                            "ECTS": 5
+                        },
+                        "Engineering Thermodynamics": {
+                            "ECTS":4
+                        }
                     },
                     "Semester 2": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Microprocessors": [
-                            90,
-                            "A"
-                        ],
-                        "Control Systems": [
-                            88,
-                            "A"
-                        ],
-                        "Power Systems": [
-                            86,
-                            "A-"
-                        ],
-                        "Digital Signal Processing": [
-                            89,
-                            "A"
-                        ]
+                        "Electrical Workshop II": {
+                            "ECTS": 4
+                        },
+                        "Electrical Engineering Lab III": {
+                            "ECTS": 3
+                        },
+                        "Signals and Systems Analysis": {
+                            "ECTS": 6
+                        },
+                        "Computational Methods": {
+                            "ECTS": 6
+                        },
+                        "Electromagnetic Fields": {
+                            "ECTS": 5
+                        },
+                        "Applied Mathematics II": {
+                            "ECTS": 5
+                        }
                     }
                 },
                 
                 "Year 3": {
                     "Semester 1": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Communication Systems": [
-                            91,
-                            "A"
-                        ],
-                        "Embedded Systems": [
-                            92,
-                            "A"
-                        ],
-                        "Renewable Energy Systems": [
-                            90,
-                            "A"
-                        ],
-                        "Advanced Circuit Design": [
-                            88,
-                            "A"
-                        ]
+                        "Introduction to Electrical Machines": {
+                            "ECTS":6
+                    },
+                        "Electrical Materials and Technology": {
+                            "ECTS": 5
+                        },
+                        "Network Analysis and Sysnthesis": {
+                            "ECTS": 6
+                        },
+                        "Probabiliy and Random Proccess": {
+                            "ECTS": 5
+                        },
+                        "Machine Lab": {
+                            "ECTS": 3
+                        },
+                        "Digital Logic Design": {
+                            "ECTS":6
+                        },
+                        "Object Oriented Programming (Java)": {
+                            "ECTS": 5
+                        }
                     },
                     "Semester 2": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Robotics": [
-                            93,
-                            "A"
-                        ],
-                        "Machine Learning": [
-                            94,
-                            "A"
-                        ],
-                        "Data Structures and Algorithms": [
-                            90,
-                            "A"
-                        ],
-                        "Software Engineering": [
-                            89,
-                            "A"
-                        ]
+                        
+                        "Digital Signal Processing": {
+                            "ECTS": 5
+                        },
+                        "Introduction to Instrumentation":{
+                            "ECTS": 5
+                        },
+                        "Introduction to Power System":{
+                            "ECTS": 5
+                        },
+                        "Electrical Engineering Lab IV":{
+                            "ECTS": 4
+                        },
+                        "Computer Architecture and Organization":{
+                            "ECTS": 5
+                        },
+                        "Introduction to Communication Systems":{
+                            "ECTS": 5
+                        },
+                        "Introduction to Control Engineering":{
+                            "ECTS": 5
+                        }
+                        
                     }
                 },
                 "Year 4": {
                     "Semester 1": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "VLSI Design": [
-                            95,
-                            "A"
-                        ],
-                        "Computer Networks": [
-                            92,
-                            "A"
-                        ],
-                        "Artificial Intelligence": [
-                            91,
-                            "A"
-                        ],
-                        "Project Management": [
-                            90,
-                            "A"
-                        ]
+                        
+                        "VLSI Design":{
+                            "ECTS": 5
+                        },
+                        "Software Engineering":{
+                            "ECTS": 5
+                        },
+                        "Microcomputer and Interfacing":{
+                            "ECTS": 6
+                        },
+                        "Database Systems":{
+                            "ECTS": 5
+                        },
+                        "Data Structure":{
+                            "ECTS": 5
+                        },
+                        "Data Communication and Computer Systems":{
+                            "ECTS": 5
+                        }
                     },
                     "Semester 2": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Capstone Project": [
-                            96,
-                            "A"
-                        ],
-                        "Advanced Topics in Electrical Engineering": [
-                            93,
-                            "A"
-                        ],
-                        "Professional Ethics in Engineering": [
-                            94,
-                            "A"
-                        ]
+                        
+                        "Intership":{
+                            "ECTS": 30
+                        }
                     }
                 },
                 "Year 5": {
                     "Semester 1": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Thesis": [
-                            97,
-                            "A"
-                        ],
-                        "Advanced Control Systems": [
-                            95,
-                            "A"
-                        ],
-                        "Smart Grid Technologies": [
-                            94,
-                            "A"
-                        ]
+                        "Semester Project":{
+                            "ECTS": 4
+                        },
+                        "Computer and Network Security":{
+                            "ECTS": 5
+                        },
+                        "Research Methods and Presentation":{
+                            "ECTS": 3
+                        },
+                        "Embedded Systems":{
+                            "ECTS": 5
+                        },
+                        "Introduction to Compilers":{
+                            "ECTS": 5
+                        },
+                        "Algorithm Analysis and Design":{
+                            "ECTS": 4
+                        },
+                        "Operating System":{
+                            "ECTS": 5
+                        }
                     },
                     "Semester 2": {
-                        "GPA": 3.91,
-                        "CGPA": 3.89,
-                        "Internship": [
-                            98,
-                            "A"
-                        ],
-                        "Engineering Management": [
-                            96,
-                            "A"
-                        ]
+                        
+                        "Introduction to Robotics":{
+                            "ECTS": 5
+                        },
+                        "Entrepreneurship": {
+                            "ECTS": 4
+                        },
+                        "Thesis":{
+                            "ECTS": 12
+                        }
                     }
-                }
-            }            
+            
+            }
+        
+        }            
            
-        }
     }
+
 }
-
-

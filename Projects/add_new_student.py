@@ -1,6 +1,7 @@
 from datetime import datetime
 import file_access as fa  
 import unique_id_generation as uig
+import password_encryption as pe
 
 def add_new_student():
 
@@ -37,8 +38,14 @@ def add_new_student():
         "phone number": input("Enter the contact person's phone number:").strip(),
         "email": input("Enter the contact person's email:").strip().lower()
     }
+    
+    student_id =  uig.generate_student_id(first_name, second_name, last_name, registration_year)
+    login_credentials = {
+        "username": student_id,
+        "password": pe.hash_password("Welcome@1234")  # Default password, can be changed later
+    }
 
-    student_id =  uig.generate_student_id(first_name, second_name, last_name, registration_year),
+    # Calculate age based on birth date
     age = datetime.now().year - int(birth_date.split("-")[0])
 
     new_student = {
@@ -51,6 +58,7 @@ def add_new_student():
         "age": age,
         "gender": gender,
         "email": email,
+        "login_credentials": login_credentials,
         "nationality": nationality,
         "phone_number": phone_number,
         "contact_info": contact_info,
@@ -60,6 +68,7 @@ def add_new_student():
         "memberships": memberships,
         "scholarship": scholarship,
         "family": family
+
     }
 
     data = fa.load_data()

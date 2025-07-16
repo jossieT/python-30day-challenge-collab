@@ -42,11 +42,15 @@ def add_new_student():
     student_id =  uig.generate_student_id(first_name, second_name, last_name, registration_year)
     login_credentials = {
         "username": student_id,
-        "password": pe.hash_password("Welcome@1234")  # Default password, can be changed later
+        "password": pe.hash_password(uig.default_student_password())  # Default password, must be changed later at the first login
     }
 
     # Calculate age based on birth date
     age = datetime.now().year - int(birth_date.split("-")[0])
+    school_info = {
+        "university_name":input("Which university is the student placed?:"),
+        "college": input("What college is he assigned in?:")
+    }
 
     new_student = {
         "student_id": student_id,
@@ -54,6 +58,7 @@ def add_new_student():
         "second_name": second_name,
         "last_name": last_name,
         "registration_year": registration_year,
+        "school_info": school_info,
         "birth_date": birth_date,
         "age": age,
         "gender": gender,

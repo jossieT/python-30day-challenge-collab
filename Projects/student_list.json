@@ -1,5 +1,5 @@
 {
-    "MYC673": {
+    "MYC/5434/10": {
         "first_name": "Mulat",
         "second_name": "Yazew",
         "last_name": "Chekol",
@@ -9,15 +9,15 @@
         "email": "mul.ya234@gmail.com",
         "phone number": "+251989932345",
         "login_credentials": {
-                "username": "MYC/5434/10",
-                "password": "$2b$12$p1YXO1HKElFQzbqxUFmmreWsjNzIg9PVeWJMWNTbpuHUJLsgtLPwS"
-            },
+            "username": "MYC/5434/10",
+            "password": "$2b$12$1oKwzluAMZI02JdFecn12uKPwYrFxoBFyVPSElfp15K4YGLTGQPW2"
+        },
         "contact_info": {
             "first_name_contact_person": "Asfaw Yenealem",
             "last_name_contact_person": "Biresaw",
             "phone number": "+251926384984",
             "email": "asfaw.yene@gmail.com"
-            },
+        },
         "address": {
             "region": "Addis Ababa",
             "city": "Addis Ababa",
@@ -29,30 +29,30 @@
         },
         "nationality": "Ethiopian",
         "languages": [
-                "Amharic",
-                "Awigna",
-                "English",
-                "Ge'ez"
-            ],
+            "Amharic",
+            "Awigna",
+            "English",
+            "Ge'ez"
+        ],
         "Member": [
-                "ESSS",
-                "SoTA",
-                "EEEA"
-            ],
+            "ESSS",
+            "SoTA",
+            "EEEA"
+        ],
         "scholarship": [
-                "full"
-            ],
+            "full"
+        ],
         "family": [
-                "Yazew Chekol Guadie",
-                "Azeneg Kassa Zeru"
-            ],
+            "Yazew Chekol Guadie",
+            "Azeneg Kassa Zeru"
+        ],
         "marital status": "single",
         "registration_year": 2009,
         "School_info": {
-            "university_name":"Addis Ababa university",
+            "university_name": "Addis Ababa university",
             "college": "Addis Ababa Institute of Technology"
         },
-        "courses_completed":{
+        "courses_completed": {
             "Year 1": {
                 "Semester 1": {
                     "semester_average": 3.7,
@@ -63,7 +63,7 @@
                         "score": 95,
                         "grade": "A+"
                     },
-                    "Introduction to Engineering Profession":{
+                    "Introduction to Engineering Profession": {
                         "ects": 2,
                         "score": 88,
                         "grade": "A"
@@ -83,14 +83,13 @@
                         "score": 85,
                         "grade": "A+"
                     },
-                    "Civics and Ethical Education":{
+                    "Civics and Ethical Education": {
                         "ects": 5,
                         "score": 90,
                         "grade": "A+"
                     }
                 },
                 "Semester 2": {
-                    
                     "semester_average": 0,
                     "cumulative_average": 0,
                     "school": "School of Electrical and Computer Engineering",
@@ -131,225 +130,209 @@
                     }
                 }
             }
-        },        
-  
-        "courses_aait_sece": {
-            
-            "Year 1": {
-                "Semester 1": {
-                    
-                    "Applied Mathematics I": {
-                        "ects": 7
-                    },
-                    "Introduction to Engineering Profession":{
-                        "ects": 2
-                    },
-                    "Engineering Drawing": {
-                        "ects": 6
-                    },
-                    "Communicative English": {
-                        "ects": 5
-                    },
-                    "Engineering Mechanics I (Statics)": {
-                        "ects": 6
-                    },
-                    "Civics and Ethical Education":{
-                        "ects": 5
-                    }
+        }
+    },
+    "courses_aait_sece": {
+        "Year 1": {
+            "Semester 1": {
+                "Applied Mathematics I": {
+                    "ects": 7
                 },
-                "Semester 2": {
-                    
-                    "Electrical Engineering Lab I": {
-                        "ects": 2
-                    },
-                    "Introduction to Logic": {
-                        "ects": 5
-                    },
-                    "Basic Writing Skills": {
-                        "ects": 5
-                    },
-                    "Applied Mathematics II": {
-                        "ects": 7
-                    },
-                    "Introduction to Economics": {
-                        "ects": 5
-                    },
-                    "Engineering Mechanics II (Dynamics)": {
-                        "ects": 6
-                    },
-                    "Fundamentals of Circuits": {
-                        "ects": 6
-                    }
+                "Introduction to Engineering Profession": {
+                    "ects": 2
+                },
+                "Engineering Drawing": {
+                    "ects": 6
+                },
+                "Communicative English": {
+                    "ects": 5
+                },
+                "Engineering Mechanics I (Statics)": {
+                    "ects": 6
+                },
+                "Civics and Ethical Education": {
+                    "ects": 5
                 }
             },
-                "Year 2": {
-                    "Semester 1": {
-                    
-                        "Introduction to Computing": {
-                            "ects": 5
-                        },
-                        "Applied Modern Physics": {
-                            "ects": 5
-                        },
-                        "Electrical Workshop Practice I": {
-                            "ects": 3
-                        },
-                        "Electrical Engineering Lab II":{
-                            "ects": 3
-                        },
-
-                        "Applied Engineering Mathematics III": {
-                        "ects": 7
-                        },
-                        "Applied Electronics I":{
-                            "ects": 5
-                        },
-                        "Engineering Thermodynamics": {
-                            "ects":4
-                        }
-                    },
-                    "Semester 2": {
-                        "Electrical Workshop II": {
-                            "ects": 4
-                        },
-                        "Electrical Engineering Lab III": {
-                            "ects": 3
-                        },
-                        "Signals and Systems Analysis": {
-                            "ects": 6
-                        },
-                        "Computational Methods": {
-                            "ects": 6
-                        },
-                        "Electromagnetic Fields": {
-                            "ects": 5
-                        },
-                        "Applied Mathematics II": {
-                            "ects": 5
-                        }
-                    }
+            "Semester 2": {
+                "Electrical Engineering Lab I": {
+                    "ects": 2
                 },
-                
-                "Year 3": {
-                    "Semester 1": {
-                        "Introduction to Electrical Machines": {
-                            "ects":6
-                    },
-                        "Electrical Materials and Technology": {
-                            "ects": 5
-                        },
-                        "Network Analysis and Sysnthesis": {
-                            "ects": 6
-                        },
-                        "Probabiliy and Random Proccess": {
-                            "ects": 5
-                        },
-                        "Machine Lab": {
-                            "ects": 3
-                        },
-                        "Digital Logic Design": {
-                            "ects":6
-                        },
-                        "Object Oriented Programming (Java)": {
-                            "ects": 5
-                        }
-                    },
-                    "Semester 2": {
-                        
-                        "Digital Signal Processing": {
-                            "ects": 5
-                        },
-                        "Introduction to Instrumentation":{
-                            "ects": 5
-                        },
-                        "Introduction to Power System":{
-                            "ects": 5
-                        },
-                        "Electrical Engineering Lab IV":{
-                            "ects": 4
-                        },
-                        "Computer Architecture and Organization":{
-                            "ects": 5
-                        },
-                        "Introduction to Communication Systems":{
-                            "ects": 5
-                        },
-                        "Introduction to Control Engineering":{
-                            "ects": 5
-                        }
-                        
-                    }
+                "Introduction to Logic": {
+                    "ects": 5
                 },
-                "Year 4": {
-                    "Semester 1": {
-                        
-                        "VLSI Design":{
-                            "ects": 5
-                        },
-                        "Software Engineering":{
-                            "ects": 5
-                        },
-                        "Microcomputer and Interfacing":{
-                            "ects": 6
-                        },
-                        "Database Systems":{
-                            "ects": 5
-                        },
-                        "Data Structure":{
-                            "ects": 5
-                        },
-                        "Data Communication and Computer Systems":{
-                            "ects": 5
-                        }
-                    },
-                    "Semester 2": {
-                        
-                        "Intership":{
-                            "ects": 30
-                        }
-                    }
+                "Basic Writing Skills": {
+                    "ects": 5
                 },
-                "Year 5": {
-                    "Semester 1": {
-                        "Semester Project":{
-                            "ects": 4
-                        },
-                        "Computer and Network Security":{
-                            "ects": 5
-                        },
-                        "Research Methods and Presentation":{
-                            "ects": 3
-                        },
-                        "Embedded Systems":{
-                            "ects": 5
-                        },
-                        "Introduction to Compilers":{
-                            "ects": 5
-                        },
-                        "Algorithm Analysis and Design":{
-                            "ects": 4
-                        },
-                        "Operating System":{
-                            "ects": 5
-                        }
-                    },
-                    "Semester 2": {
-                        
-                        "Introduction to Robotics":{
-                            "ects": 5
-                        },
-                        "Entrepreneurship": {
-                            "ects": 4
-                        },
-                        "Thesis":{
-                            "ects": 12
-                        }
-                    }
-            
+                "Applied Mathematics II": {
+                    "ects": 7
+                },
+                "Introduction to Economics": {
+                    "ects": 5
+                },
+                "Engineering Mechanics II (Dynamics)": {
+                    "ects": 6
+                },
+                "Fundamentals of Circuits": {
+                    "ects": 6
+                }
             }
-        
-        }            
-           
+        },
+        "Year 2": {
+            "Semester 1": {
+                "Introduction to Computing": {
+                    "ects": 5
+                },
+                "Applied Modern Physics": {
+                    "ects": 5
+                },
+                "Electrical Workshop Practice I": {
+                    "ects": 3
+                },
+                "Electrical Engineering Lab II": {
+                    "ects": 3
+                },
+                "Applied Engineering Mathematics III": {
+                    "ects": 7
+                },
+                "Applied Electronics I": {
+                    "ects": 5
+                },
+                "Engineering Thermodynamics": {
+                    "ects": 4
+                }
+            },
+            "Semester 2": {
+                "Electrical Workshop II": {
+                    "ects": 4
+                },
+                "Electrical Engineering Lab III": {
+                    "ects": 3
+                },
+                "Signals and Systems Analysis": {
+                    "ects": 6
+                },
+                "Computational Methods": {
+                    "ects": 6
+                },
+                "Electromagnetic Fields": {
+                    "ects": 5
+                },
+                "Applied Mathematics II": {
+                    "ects": 5
+                }
+            }
+        },
+        "Year 3": {
+            "Semester 1": {
+                "Introduction to Electrical Machines": {
+                    "ects": 6
+                },
+                "Electrical Materials and Technology": {
+                    "ects": 5
+                },
+                "Network Analysis and Sysnthesis": {
+                    "ects": 6
+                },
+                "Probabiliy and Random Proccess": {
+                    "ects": 5
+                },
+                "Machine Lab": {
+                    "ects": 3
+                },
+                "Digital Logic Design": {
+                    "ects": 6
+                },
+                "Object Oriented Programming (Java)": {
+                    "ects": 5
+                }
+            },
+            "Semester 2": {
+                "Digital Signal Processing": {
+                    "ects": 5
+                },
+                "Introduction to Instrumentation": {
+                    "ects": 5
+                },
+                "Introduction to Power System": {
+                    "ects": 5
+                },
+                "Electrical Engineering Lab IV": {
+                    "ects": 4
+                },
+                "Computer Architecture and Organization": {
+                    "ects": 5
+                },
+                "Introduction to Communication Systems": {
+                    "ects": 5
+                },
+                "Introduction to Control Engineering": {
+                    "ects": 5
+                }
+            }
+        },
+        "Year 4": {
+            "Semester 1": {
+                "VLSI Design": {
+                    "ects": 5
+                },
+                "Software Engineering": {
+                    "ects": 5
+                },
+                "Microcomputer and Interfacing": {
+                    "ects": 6
+                },
+                "Database Systems": {
+                    "ects": 5
+                },
+                "Data Structure": {
+                    "ects": 5
+                },
+                "Data Communication and Computer Systems": {
+                    "ects": 5
+                }
+            },
+            "Semester 2": {
+                "Intership": {
+                    "ects": 30
+                }
+            }
+        },
+        "Year 5": {
+            "Semester 1": {
+                "Semester Project": {
+                    "ects": 4
+                },
+                "Computer and Network Security": {
+                    "ects": 5
+                },
+                "Research Methods and Presentation": {
+                    "ects": 3
+                },
+                "Embedded Systems": {
+                    "ects": 5
+                },
+                "Introduction to Compilers": {
+                    "ects": 5
+                },
+                "Algorithm Analysis and Design": {
+                    "ects": 4
+                },
+                "Operating System": {
+                    "ects": 5
+                }
+            },
+            "Semester 2": {
+                "Introduction to Robotics": {
+                    "ects": 5
+                },
+                "Entrepreneurship": {
+                    "ects": 4
+                },
+                "Thesis": {
+                    "ects": 12
+                }
+            }
+        }
     }
-
 }

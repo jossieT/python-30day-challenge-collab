@@ -10,3 +10,6 @@ def hash_password(password: str) -> str:
 def check_password(password: str, hashed: str) -> bool:
     # Check if the provided password matches the hashed password
     return bcrypt.checkpw(password.encode('utf-8'), hashed.encode('utf-8'))
+
+if __name__ == "__main__":
+    print(hash_password("Welcome@1234"))

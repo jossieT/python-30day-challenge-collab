@@ -62,6 +62,11 @@ def lists_to_strings():
 #7. Write a lambda function which can solve a slope or y-intercept of linear functions.
 linear_function = lambda x1, x2, y1, y2: (y2-y1)/(x2-x1)
 
+
+
+
+
+# Main function to execute the code
 if __name__ == "__main__":
     num_fileter()
     print(flatten_list())

@@ -42,7 +42,8 @@ def add_new_student():
     student_id =  uig.generate_student_id(first_name, second_name, last_name, registration_year)
     login_credentials = {
         "username": student_id,
-        "password": pe.hash_password(uig.default_student_password())  # Default password, must be changed later at the first login
+        # Default password, must be changed later by the user at the first login
+        "password": pe.hash_password(uig.default_student_password())  
     }
 
     # Calculate age based on birth date

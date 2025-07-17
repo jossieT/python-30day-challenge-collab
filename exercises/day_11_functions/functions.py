@@ -196,10 +196,8 @@ def calculate_mode(list_variable: list):
 
     
 def calculate_range(list_variable):
-    max_value = max(list_variable)
-    min_value = min(list_variable)
-    range = max_value-min_value
-    return range
+    return max(list_variable)-min(list_variable)
+
 def calculate_variance(list_variable):
     mean = calculate_mean(list_variable)
     N = len(list_variable)

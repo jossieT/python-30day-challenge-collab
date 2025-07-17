@@ -3,7 +3,7 @@ import file_access as fa
 import unique_id_generation as uig
 import password_encryption as pe
 
-def add_new_student():
+def new_student():
 
     first_name = input("Enter the student's first name: ").strip().upper()
     second_name = input("Enter the student's second name: ").strip().upper()
@@ -29,7 +29,7 @@ def add_new_student():
     languages = input("Enter the languages spoken by student (comma-separated):").strip().upper().split(",")
     memberships = input("Enter the memberships of student (comma-separated):").strip().upper().split(",")
     scholarship = input("Enter the scholarship status of student:").strip().upper()
-    family = input("Enter the family status of student:").strip().upper().split(",")
+    parents = input("Enter the name of student's parents status of student:").strip().upper().split(",")
 
 
     contact_info = {
@@ -45,6 +45,7 @@ def add_new_student():
         # Default password, must be changed later by the user at the first login
         "password": pe.hash_password(uig.default_student_password())  
     }
+    degree_level = input("For which degree level is the student registering for (e.g., bachelor of science?")
 
     # Calculate age based on birth date
     age = datetime.now().year - int(birth_date.split("-")[0])
@@ -73,7 +74,8 @@ def add_new_student():
         "languages": languages,
         "memberships": memberships,
         "scholarship": scholarship,
-        "family": family
+        "parents": parents,
+        "degree_level":[degree_level]
 
     }
 
@@ -84,7 +86,5 @@ def add_new_student():
          print("The student id exists.")
 
     fa.write_data(data)
-
-    print(f"New student added with ID: {student_id}")
 
 

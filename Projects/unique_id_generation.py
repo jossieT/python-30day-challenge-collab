@@ -15,4 +15,4 @@ def generate_student_id(first_name, second_name, last_name, registration_year):
     student_id = start_of_id.upper() + "/" + middle_of_id + "/" + last_of_id
     return student_id
 def default_student_password() -> str:
-    return "Welcome@1234"
+    return "Welcome2aau"

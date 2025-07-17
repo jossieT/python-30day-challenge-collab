@@ -5,7 +5,7 @@ def login():
     username = input("Enter your username:")
     password = input("Enter you password:")
     data = fa.load_data()
-    login_access = data["login_credentials"]
+    login_access = data[username]["login_credentials"]
     if username in data and username == login_access["username"] and pe.check_password(password, login_access["password"]):
         sp.course_registration(username)
     else:

@@ -106,7 +106,7 @@ def get_first_ten_countries():
 
 #15. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
 def get_last_ten_countries():
-    return list(filter(lambda country: country, countries[-1:]))
+    return list(filter(lambda country: country, countries[-10:]))
 # Exercises: Level 3
 #1. Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) 
 # file and follow the tasks below:
@@ -136,6 +136,28 @@ def countries_data_operator():
     print("Ten most spoken languages:", most_spoken_languages)
     print("Ten most populated countries:", [c['name'] for c in ten_most_populated_countries])
 
+# Decorators
+'''These decorator functions are higher order functions
+that take functions as parameters'''
+
+# First Decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+
+# Second decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+
+    return wrapper
+
+
 
 
 
@@ -159,7 +181,13 @@ if __name__ == "__main__":
     print(f"Last ten countries: {get_last_ten_countries()}")
     # Call the function to sort countries data
     countries_data_operator()
-#
+
+# Decorate the greeting function
+@split_string_decorator
+@uppercase_decorator     # order with decorators is important in this case - .upper() function does not work with lists
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # ['WELCOME', 'TO', 'PYTHON']
 
 
 

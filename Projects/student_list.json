@@ -1,4 +1,106 @@
 {
+    "AAB/0512/25": {
+        "student_id": "AAB/0512/20",
+        "first_name": "ABAY",
+        "second_name": "ALENE",
+        "last_name": "BIRESAW",
+        "registration_year": "2025-03-20",
+        "school_info": {
+            "university_name": "Addis Ababa University",
+            "college": "College of Natural and Computational Sciences"
+        },
+        "birth_date": "2005-09-10",
+        "age": 20,
+        "gender": "MALE",
+        "email": "abay.alene@gmail.com",
+        "login_credentials": {
+            "username": "AAB/0512/20",
+            "password": "$2b$12$ElUyzDKgmtAf5xx0w11dTuq/OeuhYBDBjHJAWAvu8IUNNUSBGXWgm"
+        },
+        "nationality": "ETHIOPIA",
+        "phone_number": "+251923546345",
+        "contact_info": {
+            "first_name_contact_person": "ASFAW",
+            "last_name_contact_person": "BIRESAW",
+            "phone number": "+251932632264",
+            "email": "asfaw.alene@gmail.com"
+        },
+        "address": {
+            "region": "AMHARA",
+            "city": "INJIBARA",
+            "sub_city": "INJIBARA",
+            "woreda": "BANJA",
+            "kebele": "04",
+            "house_number": "594",
+            "street": "KING GEORGE VI STREET"
+        },
+        "marital_status": "SINGLE",
+        "languages": [
+            "AMHARIC",
+            "AWIGNA",
+            "ENGLISH"
+        ],
+        "memberships": [
+            ""
+        ],
+        "scholarship": "FULL",
+        "parents": [
+            "ALENE BIRESAW",
+            " AYEHUSH ALEMU"
+        ],
+        "bachelor of science": {
+            "computer science": {
+                "Year 1": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                },
+                "Year 2": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                },
+                "Year 3": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                },
+                "Year 4": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                }
+            }
+        }
+    },
     "DSC/9371/19": {
         "student_id": "DSC/9371/19",
         "first_name": "DERESE",
@@ -817,107 +919,5 @@
     },
     "history": {
         "action_doer": {}
-    },
-    "AAB/0512/25": {
-        "student_id": "AAB/0512/20",
-        "first_name": "ABAY",
-        "second_name": "ALENE",
-        "last_name": "BIRESAW",
-        "registration_year": "2025-03-20",
-        "school_info": {
-            "university_name": "Addis Ababa University",
-            "college": "College of Natural and Computational Sciences"
-        },
-        "birth_date": "2005-09-10",
-        "age": 20,
-        "gender": "MALE",
-        "email": "abay.alene@gmail.com",
-        "login_credentials": {
-            "username": "AAB/0512/20",
-            "password": "$2b$12$ElUyzDKgmtAf5xx0w11dTuq/OeuhYBDBjHJAWAvu8IUNNUSBGXWgm"
-        },
-        "nationality": "ETHIOPIA",
-        "phone_number": "+251923546345",
-        "contact_info": {
-            "first_name_contact_person": "ASFAW",
-            "last_name_contact_person": "BIRESAW",
-            "phone number": "+251932632264",
-            "email": "asfaw.alene@gmail.com"
-        },
-        "address": {
-            "region": "AMHARA",
-            "city": "INJIBARA",
-            "sub_city": "INJIBARA",
-            "woreda": "BANJA",
-            "kebele": "04",
-            "house_number": "594",
-            "street": "KING GEORGE VI STREET"
-        },
-        "marital_status": "SINGLE",
-        "languages": [
-            "AMHARIC",
-            "AWIGNA",
-            "ENGLISH"
-        ],
-        "memberships": [
-            ""
-        ],
-        "scholarship": "FULL",
-        "parents": [
-            "ALENE BIRESAW",
-            " AYEHUSH ALEMU"
-        ],
-        "bachelor of science": {
-            "computer science": {
-                "Year 1": {
-                    "Semester 1": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    },
-                    "Semester 2": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    }
-                },
-                "Year 2": {
-                    "Semester 1": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    },
-                    "Semester 2": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    }
-                },
-                "Year 3": {
-                    "Semester 1": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    },
-                    "Semester 2": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    }
-                },
-                "Year 4": {
-                    "Semester 1": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    },
-                    "Semester 2": {
-                        "semester_average": 0,
-                        "cumulative_average": 0,
-                        "department": "computer science"
-                    }
-                }
-            }
-        }
     }
 }

@@ -11,8 +11,13 @@ def generate_student_id(first_name, second_name, last_name, registration_year):
     # Convert to a single string
     middle_of_id = ''.join(str(digit) for digit in unique_digits)
 
+    year = registration_year.strip().split("-")[0]
+
     last_of_id = registration_year[-2] + registration_year[-1]
     student_id = start_of_id.upper() + "/" + middle_of_id + "/" + last_of_id
     return student_id
 def default_student_password() -> str:
     return "Welcome2aau"
+
+
+

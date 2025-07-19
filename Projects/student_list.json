@@ -1,11 +1,90 @@
 {
+    "DSC/9371/19": {
+        "student_id": "DSC/9371/19",
+        "first_name": "DERESE",
+        "second_name": "SMENEH",
+        "last_name": "CHALACHEWW",
+        "registration_year": "2025-07-19",
+        "school_info": {
+            "university_name": "Metu",
+            "college": "Health Science College"
+        },
+        "birth_date": "1990-10-12",
+        "age": 35,
+        "gender": "MALE",
+        "email": "derese.smeneh@gmail.com",
+        "login_credentials": {
+            "username": "DSC/9371/19",
+            "password": "$2b$12$8VeVFdJhHOExkoqLuKIzZ.eUQddXHuAiF8qcJAWuBqJt02eIF875e"
+        },
+        "nationality": "ETHIOPIA",
+        "phone_number": "+251934563396",
+        "contact_info": {
+            "first_name_contact_person": "KEBEDE ALEMU",
+            "last_name_contact_person": "BITEW",
+            "phone number": "+251932493920",
+            "email": "kebede.bitew@gmail.com"
+        },
+        "address": {
+            "region": "AMHARA",
+            "city": "INJIBARA",
+            "sub_city": "INJIBARA",
+            "woreda": "ANKESHA",
+            "kebele": "SIKUI",
+            "house_number": "NEW",
+            "street": "1000"
+        },
+        "marital_status": "SINGLE",
+        "languages": [
+            "AMHARIC",
+            "AWIGNA",
+            "ENGLISH"
+        ],
+        "memberships": [
+            "EOTC",
+            "CBE"
+        ],
+        "scholarship": "SELF-FUNDED",
+        "parents": [
+            "SMENEH ABEJE",
+            "BELETECH BELAY"
+        ],
+        "Masters Degrees": {
+            "midwifery": {
+                "Year 1": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "midwifery"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "midwifery"
+                    }
+                },
+                "Year 2": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "midwifery"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "midwifery"
+                    }
+                }
+            }
+        }
+    },
     "MYC/5434/10": {
         "first_name": "Mulat",
         "second_name": "Yazew",
         "last_name": "Chekol",
         "age": 19,
         "gender": "Male",
-        "birth_date": "2004-05-15",
+        "birth_date": "1997-01-26",
         "email": "mul.ya234@gmail.com",
         "phone number": "+251989932345",
         "login_credentials": {
@@ -47,472 +126,798 @@
             "Azeneg Kassa Zeru"
         ],
         "marital status": "single",
-        "registration_year": 2010,
+        "registration_year": "2024-10-10",
+        "graduation_year": "2021-10-10",
         "School_info": {
-            "university_name": "Addis Ababa university",
+            "university_name": "Addis Ababa univesity",
             "college": "Addis Ababa Institute of Technology"
         },
-
-        "degree_level": ["Bachelor of Science"],
-
-        "courses_completed": {
-            "Year 1": {
-                "Semester 1": {
-                    "semester_average": 4.0,
-                    "cumulative_average": 4.0,
-                    "department": "Admitted To Pre-Engineering",
-                    "Applied Mathematics I": {
-                        "ects": 7,
-                        "score": 95,
-                        "grade": "A+"
+        "degree_level": {
+            "Bachelor of Science": 0
+        },
+        "bachelor of science": {
+            "Electrical and Computer Engineering": {
+                "Year 1": {
+                    "Semester 1": {
+                        "semester_average": 4.0,
+                        "cumulative_average": 4.0,
+                        "department": "Admitted To Pre-Engineering",
+                        "Applied Mathematics I": {
+                            "ects": 7,
+                            "score": 95,
+                            "grade": "A+"
+                        },
+                        "Introduction to Engineering Profession": {
+                            "ects": 2,
+                            "score": 88,
+                            "grade": "A"
+                        },
+                        "Engineering Drawing": {
+                            "ects": 6,
+                            "score": 85,
+                            "grade": "A"
+                        },
+                        "Communicative English": {
+                            "ects": 5,
+                            "score": 90,
+                            "grade": "A"
+                        },
+                        "Engineering Mechanics I (Statics)": {
+                            "ects": 6,
+                            "score": 85,
+                            "grade": "A+"
+                        },
+                        "Civics and Ethical Education": {
+                            "ects": 5,
+                            "score": 90,
+                            "grade": "A+"
+                        }
                     },
-                    "Introduction to Engineering Profession": {
-                        "ects": 2,
-                        "score": 88,
-                        "grade": "A"
-                    },
-                    "Engineering Drawing": {
-                        "ects": 6,
-                        "score": 85,
-                        "grade": "A"
-                    },
-                    "Communicative English": {
-                        "ects": 5,
-                        "score": 90,
-                        "grade": "A"
-                    },
-                    "Engineering Mechanics I (Statics)": {
-                        "ects": 6,
-                        "score": 85,
-                        "grade": "A+"
-                    },
-                    "Civics and Ethical Education": {
-                        "ects": 5,
-                        "score": 90,
-                        "grade": "A+"
-                    }
-                },
-                "Semester 2": {
-                    "semester_average": 0,
-                    "cumulative_average": 0,
-                    "department": "Transfered To Electrical and Computer Engineering",
-                    "Electrical Engineering Lab I": {
-                        "ects": 2,
-                        "score": 0,
-                        "grade": ""
-                    },
-                    "Introduction to Logic": {
-                        "ects": 5,
-                        "score": 0,
-                        "grade": ""
-                    },
-                    "Basic Writing Skills": {
-                        "ects": 5,
-                        "score": 0,
-                        "grade": ""
-                    },
-                    "Applied Mathematics II": {
-                        "ects": 7,
-                        "score": 0,
-                        "grade": ""
-                    },
-                    "Introduction to Economics": {
-                        "ects": 5,
-                        "score": 0,
-                        "grade": ""
-                    },
-                    "Engineering Mechanics II (Dynamics)": {
-                        "ects": 6,
-                        "score": 0,
-                        "grade": ""
-                    },
-                    "Fundamentals of Circuits": {
-                        "ects": 6,
-                        "score": 0,
-                        "grade": ""
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "Transfered To Electrical and Computer Engineering",
+                        "Electrical Engineering Lab I": {
+                            "ects": 2,
+                            "score": 0,
+                            "grade": ""
+                        },
+                        "Introduction to Logic": {
+                            "ects": 5,
+                            "score": 0,
+                            "grade": ""
+                        },
+                        "Basic Writing Skills": {
+                            "ects": 5,
+                            "score": 0,
+                            "grade": ""
+                        },
+                        "Applied Mathematics II": {
+                            "ects": 7,
+                            "score": 0,
+                            "grade": ""
+                        },
+                        "Introduction to Economics": {
+                            "ects": 5,
+                            "score": 0,
+                            "grade": ""
+                        },
+                        "Engineering Mechanics II (Dynamics)": {
+                            "ects": 6,
+                            "score": 0,
+                            "grade": ""
+                        },
+                        "Fundamentals of Circuits": {
+                            "ects": 6,
+                            "score": 0,
+                            "grade": ""
+                        }
                     }
                 }
             }
         }
     },
-    "admin":{
+    "admin": {
         "MulatYazew": {
-            "username":"MulatYazew",
-            "password":"$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
+            "username": "MulatYazew",
+            "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
         },
-        "YosefTeshome":{
-           "username":"YosefTeshome",
-            "password":"$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
+        "YosefTeshome": {
+            "username": "YosefTeshome",
+            "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
         }
-
     },
-
     "SECE": {
         "teachers": {
-            "Solomon Nigusu":{
-                "courses_to_teach": ["Applied Electronics", "Applied Electronics II", "Electrical Engineering Lab I"],
-                "username":"solomonnigussu",
-                "password":"$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+            "Solomon Nigusu": {
+                "courses_to_teach": [
+                    "Applied Electronics",
+                    "Applied Electronics II",
+                    "Electrical Engineering Lab I"
+                ],
+                "username": "solomonnigussu",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "electronics"
             },
             "Bisrat Derebssa": {
-                "courses_to_teach":["Digital Signal Processing", "Network Analysis and Sysnthesis"],
-                "username":"bisratderebssa",
-                "password":"$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+                "courses_to_teach": [
+                    "Digital Signal Processing",
+                    "Network Analysis and Sysnthesis"
+                ],
+                "username": "bisratderebssa",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
-                },
+            },
             "Melake Serawit": {
-                "courses_to_teach": ["Computer Architecture and Organization", "Introduction to Compilers"],
+                "courses_to_teach": [
+                    "Computer Architecture and Organization",
+                    "Introduction to Compilers"
+                ],
                 "username": "melakeserawit",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
-        },
-        "Fitsum Assamnew": {
-            "courses_to_teach": ["Software Engineering", "Machine Learning", "Thesis"],
-            "username": "fitsumassamnew",
-            "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-            "stream": "computer"
-        },
-        "Bethelhem Seifu": {
-            "courses_to_teach":["Introduction to Communication Systems", "Data Communication and Computer Systems"],
-            "username":"bethelhemseifu",
-            "password":"$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
+            },
+            "Fitsum Assamnew": {
+                "courses_to_teach": [
+                    "Software Engineering",
+                    "Machine Learning",
+                    "Thesis"
+                ],
+                "username": "fitsumassamnew",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+                "stream": "computer"
+            },
+            "Bethelhem Seifu": {
+                "courses_to_teach": [
+                    "Introduction to Communication Systems",
+                    "Data Communication and Computer Systems"
+                ],
+                "username": "bethelhemseifu",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
+            },
+            "Abebe Tesfaye": {
+                "courses_to_teach": [
+                    "Introduction to Control Engineering",
+                    "Embedded Systems"
+                ],
+                "username": "abebetesfaye",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+                "stream": "control"
+            },
+            "Hanna Tesfaye": {
+                "courses_to_teach": [
+                    "Introduction to Electrical Machines",
+                    "Electrical Materials and Technology"
+                ],
+                "username": "hannatesfaye",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+                "stream": "ECE"
+            },
+            "Mekdes Alemayehu": {
+                "courses_to_teach": [
+                    "Digital Logic Design",
+                    "Object Oriented Programming (Java)"
+                ],
+                "username": "mekdesalemayehu",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+                "stream": "computer"
+            },
+            "bachelor_of_science": {
+                "Year 1": {
+                    "Semester 1": {
+                        "Applied Mathematics I": {
+                            "ects": 7,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Engineering Profession": {
+                            "ects": 2
+                        },
+                        "Engineering Drawing": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Communicative English": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Engineering Mechanics I (Statics)": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Civics and Ethical Education": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    },
+                    "Semester 2": {
+                        "Electrical Engineering Lab I": {
+                            "ects": 2,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Logic": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Basic Writing Skills": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Applied Mathematics II": {
+                            "ects": 7,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Economics": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Engineering Mechanics II (Dynamics)": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Fundamentals of Circuits": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    }
+                },
+                "Year 2": {
+                    "Semester 1": {
+                        "Introduction to Computing": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Applied Modern Physics": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Electrical Workshop Practice I": {
+                            "ects": 3,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Electrical Engineering Lab II": {
+                            "ects": 3,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Applied Engineering Mathematics III": {
+                            "ects": 7,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Applied Electronics I": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Engineering Thermodynamics": {
+                            "ects": 4,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    },
+                    "Semester 2": {
+                        "Electrical Workshop II": {
+                            "ects": 4,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Electrical Engineering Lab III": {
+                            "ects": 3,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Signals and Systems Analysis": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Computational Methods": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Electromagnetic Fields": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Applied Mathematics II": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    }
+                },
+                "Year 3": {
+                    "Semester 1": {
+                        "Introduction to Electrical Machines": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Electrical Materials and Technology": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Network Analysis and Sysnthesis": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Probabiliy and Random Proccess": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Machine Lab": {
+                            "ects": 3,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Digital Logic Design": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Object Oriented Programming (Java)": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    },
+                    "Semester 2": {
+                        "Digital Signal Processing": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Instrumentation": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Power System": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Electrical Engineering Lab IV": {
+                            "ects": 4,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Computer Architecture and Organization": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Communication Systems": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Introduction to Control Engineering": {
+                            "ects": 5,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    }
+                },
+                "Year 4": {
+                    "Semester 1": {
+                        "VLSI Design": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Software Engineering": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Microcomputer and Interfacing": {
+                            "ects": 6,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Database Systems": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Data Structure": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Data Communication and Computer Systems": {
+                            "ects": 5,
+                            "stream": [
+                                "computer",
+                                "communication"
+                            ]
+                        }
+                    },
+                    "Semester 2": {
+                        "Intership": {
+                            "ects": 30,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    }
+                },
+                "Year 5": {
+                    "Semester 1": {
+                        "Semester Project": {
+                            "ects": 4,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Computer and Network Security": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Research Methods and Presentation": {
+                            "ects": 3,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Embedded Systems": {
+                            "ects": 5,
+                            "stream": [
+                                "computer",
+                                "control"
+                            ]
+                        },
+                        "Introduction to Compilers": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Algorithm Analysis and Design": {
+                            "ects": 4,
+                            "stream": [
+                                "computer"
+                            ]
+                        },
+                        "Operating System": {
+                            "ects": 5,
+                            "stream": [
+                                "computer"
+                            ]
+                        }
+                    },
+                    "Semester 2": {
+                        "Introduction to Robotics": {
+                            "ects": 5,
+                            "stream": [
+                                "computer",
+                                "control"
+                            ]
+                        },
+                        "Entrepreneurship": {
+                            "ects": 4,
+                            "stream": [
+                                "ECE"
+                            ]
+                        },
+                        "Thesis": {
+                            "ects": 12,
+                            "stream": [
+                                "ECE"
+                            ]
+                        }
+                    }
+                }
+            }
         }
-
-        },
-        "Year 1": {
-            "Semester 1": {
-                "Applied Mathematics I": {
-                    "ects": 7,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Engineering Profession": {
-                    "ects": 2
-                },
-                "Engineering Drawing": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Communicative English": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Engineering Mechanics I (Statics)": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Civics and Ethical Education": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                }
-            },
-            "Semester 2": {
-                "Electrical Engineering Lab I": {
-                    "ects": 2,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Logic": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Basic Writing Skills": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Applied Mathematics II": {
-                    "ects": 7,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Economics": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Engineering Mechanics II (Dynamics)": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Fundamentals of Circuits": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                }
-            }
-        },
-        "Year 2": {
-            "Semester 1": {
-                "Introduction to Computing": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Applied Modern Physics": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Electrical Workshop Practice I": {
-                    "ects": 3,
-                    "stream": ["ECE"]
-                },
-                "Electrical Engineering Lab II": {
-                    "ects": 3,
-                    "stream": ["ECE"]
-                },
-                "Applied Engineering Mathematics III": {
-                    "ects": 7,
-                    "stream": ["ECE"]
-                },
-                "Applied Electronics I": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Engineering Thermodynamics": {
-                    "ects": 4,
-                    "stream": ["ECE"]
-                }
-            },
-            "Semester 2": {
-                "Electrical Workshop II": {
-                    "ects": 4,
-                    "stream": ["ECE"]
-                },
-                "Electrical Engineering Lab III": {
-                    "ects": 3,
-                    "stream": ["ECE"]
-                },
-                "Signals and Systems Analysis": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Computational Methods": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Electromagnetic Fields": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Applied Mathematics II": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                }
-            }
-        },
-        "Year 3": {
-            "Semester 1": {
-                "Introduction to Electrical Machines": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Electrical Materials and Technology": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Network Analysis and Sysnthesis": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Probabiliy and Random Proccess": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Machine Lab": {
-                    "ects": 3,
-                    "stream": ["ECE"]
-                },
-                "Digital Logic Design": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Object Oriented Programming (Java)": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                }
-            },
-            "Semester 2": {
-                "Digital Signal Processing": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Instrumentation": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Power System": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Electrical Engineering Lab IV": {
-                    "ects": 4,
-                    "stream": ["ECE"]
-                },
-                "Computer Architecture and Organization": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Communication Systems": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                },
-                "Introduction to Control Engineering": {
-                    "ects": 5,
-                    "stream": ["ECE"]
-                }
-            }
-        },
-        "Year 4": {
-            "Semester 1": {
-                "VLSI Design": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                },
-                "Software Engineering": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                },
-                "Microcomputer and Interfacing": {
-                    "ects": 6,
-                    "stream": ["ECE"]
-                },
-                "Database Systems": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                },
-                "Data Structure": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                },
-                "Data Communication and Computer Systems": {
-                    "ects": 5,
-                    "stream": ["computer", "communication"]
-                }
-            },
-            "Semester 2": {
-                "Intership": {
-                    "ects": 30,
-                    "stream": ["ECE"]
-                }
-            }
-        },
-        "Year 5": {
-            "Semester 1": {
-                "Semester Project": {
-                    "ects": 4,
-                    "stream": ["ECE"]
-                },
-                "Computer and Network Security": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                },
-                "Research Methods and Presentation": {
-                    "ects": 3,
-                    "stream": ["ECE"]
-                },
-                "Embedded Systems": {
-                    "ects": 5,
-                    "stream": ["computer", "control"]
-                },
-                "Introduction to Compilers": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                },
-                "Algorithm Analysis and Design": {
-                    "ects": 4,
-                    "stream": ["computer"]
-                },
-                "Operating System": {
-                    "ects": 5,
-                    "stream": ["computer"]
-                }
-            },
-            "Semester 2": {
-                "Introduction to Robotics": {
-                    "ects": 5,
-                    "stream": ["computer", "control"]
-                },
-                "Entrepreneurship": {
-                    "ects": 4,
-                    "stream": ["ECE"]
-                },
-                "Thesis": {
-                    "ects": 12,
-                    "stream": ["ECE"]
-                }
-            }
-        }
-        
     },
-
-    "study_years":{
-        "bachelor of science":{
+    "study_years": {
+        "bachelor of science": {
             "other social sciences": 4,
-            "business and economic sciences":4,
+            "business and economic sciences": 4,
             "natural and computational sciences": 4,
-            "Engineering": 5,
-            "Law":5,
-            "Medicine":7,
-            "Farmacy":5,
-            "Other Health Sciences":4
-
+            "electrical and computer engineering": 5,
+            "software engineering": 5,
+            "computer science": 4,
+            "chemical and biomedical engineering": 5,
+            "civil and environmental engineering": 5,
+            "mechanical and industrial engineering": 5,
+            "biomedical engineering": 5,
+            "architecture": 5,
+            "agriculture": 5,
+            "law": 5,
+            "medicine": 7,
+            "pharmacy": 5,
+            "nursing": 4,
+            "public health": 4,
+            "public health specialization": 4,
+            "medicine specialization": 4,
+            "dentistry": 4,
+            "health officer": 4,
+            "midwifery": 4,
+            "adult and maternal health ": 4,
+            "sychatric nursing": 7
         },
-        "Masters Degrees":{
-            "other social sciences": 2,
-            "business and economic sciences":2,
+        "Masters Degrees": {
+            "english and literature": 2,
+            "georgraphy and environmental studies": 2,
+            "political science and international relations": 2,
+            "history and heritage management": 2,
+            "special needs and inclusive education": 2,
+            "foreign languages and literature": 2,
+            "journalism and communication": 2,
+            "business and economic sciences": 2,
             "natural and computational sciences": 2,
-            "Engineering": 2,
-            "Law":2,
-            "Other Health Sciences":2,
-            "Medicine Specialization":2
+            "electrical and computer engineering": 2,
+            "software engineering": 2,
+            "computer science": 2,
+            "chemical and biomedical engineering": 2,
+            "civil and environmental engineering": 2,
+            "mechanical and industrial engineering": 2,
+            "biomedical engineering": 2,
+            "architecture": 2,
+            "agriculture": 2,
+            "law": 2,
+            "nursing": 2,
+            "pharmacy": 2,
+            "public health": 2,
+            "public health specialization": 2,
+            "medicine": 2,
+            "medicine specialization": 2,
+            "dentistry": 2,
+            "health officer": 2,
+            "midwifery": 2,
+            "adult and maternal health ": 2,
+            "sychatric nursing": 2
         },
-        "PhD":{
+        "PhD": {
             "other social sciences": 3,
-            "business and economic sciences":3,
+            "business and economic sciences": 3,
             "natural and computational sciences": 3,
-            "Engineering": 3,
-            "Law":3,
-            "Other Health Sciences":3
+            "electrical and computer engineering": 3,
+            "software engineering": 3,
+            "computer science": 3,
+            "chemical and biomedical engineering": 3,
+            "civil and environmental engineering": 3,
+            "mechanical and industrial engineering": 3,
+            "biomedical engineering": 3,
+            "architecture": 3,
+            "agriculture": 3,
+            "law": 3,
+            "nursing": 3,
+            "pharmacy": 3,
+            "public health": 3,
+            "public health specialization": 3,
+            "medicine": 3,
+            "medicine specialization": 3,
+            "dentistry": 3,
+            "health officer": 3,
+            "midwifery": 3,
+            "adult and maternal health ": 3,
+            "sychatric nursing": 3
         }
-
     },
-
-
-
-    "Colleges":{
-        "AAiT":{
-            "SECE":[
-            "Communication Engineering", 
-            "Computer Engineering", 
-            "Control Engineering", 
-            "Electronics Engineering", 
-            "Power Engineering"
+    "Colleges": {
+        "AAiT": {
+            "SECE": [
+                "Communication Engineering",
+                "Computer Engineering",
+                "Control Engineering",
+                "Electronics Engineering",
+                "Power Engineering"
             ],
-            "SMEE": ["Thermal Engineering", "Industrial Engineering"],
-            "SBME":"School of Biomedical Engineering",
+            "SMEE": [
+                "Thermal Engineering",
+                "Industrial Engineering"
+            ],
+            "SBME": "School of Biomedical Engineering",
             "SCBE": "School of Chemical and Biomedical Engineering",
-            "SSIS": ["IT", "AI", "Cyber Security", "Data Science", "Machine Learning"],
+            "SSIS": [
+                "IT",
+                "AI",
+                "Cyber Security",
+                "Data Science",
+                "Machine Learning"
+            ],
             "SCIE": "School of Civil and Environmental Engineering"
         },
-        "CBE": ["Economics", "Public Administration and Management", "IS", "Business Management"],
-        "CNCS": ["Computer Science", "Physics", "Biology", "Chemistry", "Antropology"]
-
+        "CBE": [
+            "Economics",
+            "Public Administration and Management",
+            "IS",
+            "Business Management"
+        ],
+        "CNCS": [
+            "Computer Science",
+            "Physics",
+            "Biology",
+            "Chemistry",
+            "Antropology"
+        ]
     },
-    "grading_scale":{
-        "A+":4.0,
-        "A":4.0,
-        "A-":3.75,
-        "B+":3.5,
-        "B":3.0,
-        "B-":2.75,
-        "C+":2.5,
-        "C":2.0,
-        "C-":1.75,
-        "D":1,
-        "F":0
-
+    "grading_scale": {
+        "A+": 4.0,
+        "A": 4.0,
+        "A-": 3.75,
+        "B+": 3.5,
+        "B": 3.0,
+        "B-": 2.75,
+        "C+": 2.5,
+        "C": 2.0,
+        "C-": 1.75,
+        "D": 1,
+        "F": 0
     },
-
-    "history":{
-        "action_doer": {
-
+    "history": {
+        "action_doer": {}
+    },
+    "AAB/0512/25": {
+        "student_id": "AAB/0512/20",
+        "first_name": "ABAY",
+        "second_name": "ALENE",
+        "last_name": "BIRESAW",
+        "registration_year": "2025-03-20",
+        "school_info": {
+            "university_name": "Addis Ababa University",
+            "college": "College of Natural and Computational Sciences"
+        },
+        "birth_date": "2005-09-10",
+        "age": 20,
+        "gender": "MALE",
+        "email": "abay.alene@gmail.com",
+        "login_credentials": {
+            "username": "AAB/0512/20",
+            "password": "$2b$12$ElUyzDKgmtAf5xx0w11dTuq/OeuhYBDBjHJAWAvu8IUNNUSBGXWgm"
+        },
+        "nationality": "ETHIOPIA",
+        "phone_number": "+251923546345",
+        "contact_info": {
+            "first_name_contact_person": "ASFAW",
+            "last_name_contact_person": "BIRESAW",
+            "phone number": "+251932632264",
+            "email": "asfaw.alene@gmail.com"
+        },
+        "address": {
+            "region": "AMHARA",
+            "city": "INJIBARA",
+            "sub_city": "INJIBARA",
+            "woreda": "BANJA",
+            "kebele": "04",
+            "house_number": "594",
+            "street": "KING GEORGE VI STREET"
+        },
+        "marital_status": "SINGLE",
+        "languages": [
+            "AMHARIC",
+            "AWIGNA",
+            "ENGLISH"
+        ],
+        "memberships": [
+            ""
+        ],
+        "scholarship": "FULL",
+        "parents": [
+            "ALENE BIRESAW",
+            " AYEHUSH ALEMU"
+        ],
+        "bachelor of science": {
+            "computer science": {
+                "Year 1": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                },
+                "Year 2": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                },
+                "Year 3": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                },
+                "Year 4": {
+                    "Semester 1": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    },
+                    "Semester 2": {
+                        "semester_average": 0,
+                        "cumulative_average": 0,
+                        "department": "computer science"
+                    }
+                }
+            }
         }
     }
-
 }
-

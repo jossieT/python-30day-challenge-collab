@@ -1,14 +1,38 @@
-from datetime import datetime
+from datetime import date, datetime
 import file_access as fa  
 import unique_id_generation as uig
 import password_encryption as pe
+import degrees_menu as dm
+
+def generate_degree_structure(length_of_years, department:str):
+    structure = {
+         
+            department: {}
+        }
+
+    for year in range(1, length_of_years + 1):
+        year_key = f"Year {year}"
+        structure[department][year_key] = {}
+
+        for semester in range(1, 3):  # Semester 1 and Semester 2
+            semester_key = f"Semester {semester}"
+            structure[department][year_key][semester_key] = {
+                "semester_average": 0,
+                "cumulative_average": 0,
+                "department": department
+            }
+
+    return structure
+
 
 def new_student():
+    data = fa.load_data()
 
     first_name = input("Enter the student's first name: ").strip().upper()
     second_name = input("Enter the student's second name: ").strip().upper()
     last_name = input("Enter the student's last name: ").strip().upper()
-    registration_year = input("Enter the student's registration year (e.g., 2025): ").strip()
+    today = date.today()
+    registration_year = today.strftime("%Y-%m-%d")
     birth_date = input("Enter the birth date of student (YYYY-MM-DD): ").strip()
 
     gender = input("Enter the student's gender: ").strip().upper()
@@ -45,7 +69,13 @@ def new_student():
         # Default password, must be changed later by the user at the first login
         "password": pe.hash_password(uig.default_student_password())  
     }
-    degree_level = input("For which degree level is the student registering for (e.g., bachelor of science?")
+
+
+
+    length_of_years, degree_level, department = dm.degrees_menu()
+    degree_structure = generate_degree_structure(length_of_years, department)
+
+
 
     # Calculate age based on birth date
     age = datetime.now().year - int(birth_date.split("-")[0])
@@ -53,6 +83,7 @@ def new_student():
         "university_name":input("Which university is the student placed?:"),
         "college": input("What college is he assigned in?:")
     }
+    
 
     new_student = {
         "student_id": student_id,
@@ -74,17 +105,41 @@ def new_student():
         "languages": languages,
         "memberships": memberships,
         "scholarship": scholarship,
-        "parents": parents,
-        "degree_level":[degree_level]
-
+        "parents": parents
     }
 
-    data = fa.load_data()
-    if student_id not in data:
+    try:
+        # Check if student already exists
+                
+        if student_id not in data:
             data[student_id] = new_student
-    else: 
-         print("The student id exists.")
+        elif student_id in data:
+            for info in new_student:
+                if info not in data[student_id]:
+                    data[student_id][info] = new_student[info]
+                else:continue
 
-    fa.write_data(data)
+        else: 
+            print("All the information exists.")
+
+        if degree_level not in data[student_id]:
+            data[student_id][degree_level] = degree_structure        
+
+        elif department not in data[student_id][degree_level]:
+            data[student_id][degree_level][department] = degree_structure
+
+        else:
+            print(f"The student is already registered for {degree_level} in {department}")
+        data = {student_id: new_student, **data} # Update the data with the new student at the beginning of dictionary
+        # Save the updated data
+        fa.write_data(data)
+
+        print(f"New student {first_name} {second_name} {last_name} has been added successfully with ID: {student_id}")
+    
+    except Exception as e:
+        print(f"An error occurred while saving the student data: {e}")
+
+
+
 
 

@@ -1,20 +1,20 @@
 from datetime import datetime, date
 # Exercises: Day 16
 #1. Get the current day, month, year, hour, minute and timestamp from datetime module
-today = datetime.now()
-print(today)
-year  = today.year
-month = today.month
-day = today.day
-hour = today.hour
-minute = today.minute
-second = today.second
-time_stamp = today.timestamp()
+now = datetime.now()
+print(now)
+year  = now.year
+month = now.month
+day = now.day
+hour = now.hour
+minute = now.minute
+second = now.second
+time_stamp = now.timestamp()
 print(day, month, year, hour, minute)
 print('timestamp', time_stamp)
 print(f'{day}/{month}/{year}, {hour}:{minute}')
 #2. Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
-time = today.strftime("%m/%d/%Y, %H:%M:%S")
+time = now.strftime("%m/%d/%Y, %H:%M:%S")
 print(time)
 #3. Today is 5 December, 2019. Change this time string to time.
 date_string = " 5 December, 2019"
@@ -22,13 +22,12 @@ print("date_string =", date_string)
 date_object = datetime.strptime(date_string, "%d %B, %Y")
 print("date_object =", date_object)
 #4. Calculate the time difference between now and new year.
-today_= date(year=2025, month=7, day=19)
+today_= date(year=2025, month=7, day=20)
 new_year = date(year=2026, month=1, day=1)
 time_left_for_newyear = new_year - today_
 
 print('Time left for new year: ', time_left_for_newyear)
-
-t1 = datetime(year = 2025, month = 7, day = 19, hour = 21, minute = 37, second = 0)
+t1 = now
 t2 = datetime(year = 2026, month = 1, day = 1, hour = 0, minute = 0, second = 0)
 diff = t2 - t1
 print('Time left for new year:', diff) # Time left for new year: 26 days, 23: 01: 00
@@ -61,4 +60,3 @@ print(f"The time difference betwen 1 January 1970 and now is {time_difference}")
 #. To implement time-based access control
 #. To create time-based filters in data analysis
 #. To analyze trends over time
-

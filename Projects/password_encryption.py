@@ -1,6 +1,7 @@
 import bcrypt
 import file_access as fa
-
+import password_encryption as pe
+import unique_id_generation as uig
 def hash_password(password: str) -> str:
     # Generate a salt
     salt = bcrypt.gensalt()

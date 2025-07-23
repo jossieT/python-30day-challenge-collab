@@ -340,9 +340,9 @@
         }
     },
 
-    "electrical and computer engineering": {
-        "teachers": {
-            "Solomon Nigusu": {
+    "teachers": {
+        "Electrical and Computer Engineering":{
+                "Solomon Nigusu": {
                 "courses_to_teach": [
                     "Applied Electronics",
                     "Applied Electronics II",
@@ -415,7 +415,11 @@
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
             }
-        },
+        }
+    },
+
+    "electrical and computer engineering": {
+        
             "courses": {
                " bachelor of science":{ 
                 "Year 1": {
@@ -793,7 +797,8 @@
             }
         }
     },
-    "study_years": {
+
+    "degree programs": {
         "bachelor of science": {
             "english and literature": 4,
             "georgraphy and environmental studies": 4,

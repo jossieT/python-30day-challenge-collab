@@ -3,13 +3,13 @@ import file_access as fa
 def degrees_menu():
     try:
         data = fa.load_data()
-        study_years = data['study_years']
+        degree_programs = data["degree programs"]
         
 
     # Gather rows into a list of [Program, Field, Years]
         rows = []
         counter = 1
-        for program, fields in study_years.items():
+        for program, fields in degree_programs.items():
             for field, years in fields.items():
                 rows.append([counter, program, field, years])
                 counter += 1
@@ -34,5 +34,7 @@ def degrees_menu():
         print("Invalid input. Please enter a number.")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+
 
 

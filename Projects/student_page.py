@@ -1,64 +1,42 @@
 import file_access as fa
 from datetime import datetime
+import degrees_menu as dm
+
 def student_main_menu():
     pass
-
 def course_registration(username):
     try:
         data = fa.load_data()
-        # Replace with your actual start date
-        course_start_date = input("Enter the course start date (YYYY-MM-DD): ").strip()
-        year, month, day = map(int, course_start_date.split('-'))
-        start_date = datetime(year, month, day)
-        today = datetime.today()
+        maximum_ects_per_semester = 37
+        length_of_years, degree_level, department = dm.degrees_menu()
+        courses = data[department]["courses"][degree_level]
+        degree = data[username]["degrees"]
+        dropped_courses = data[username]["dropped_courses"]
+        if degree[degree_level] != 0:
+            print(f"You have completed {degree_level} in {department}."
+                  f"from {data[username]['school_info']['university_name']}.")
+        elif degree_level in data[username]:
+            if department in data[username][degree_level]:
+                for i in range(1, length_of_years + 1):
+                    year_keys = "Year " + 1
+                    for i in range(1, 3):
+                        semester = "Semester " + i
+                        semester_data = data[username][degree_level][department][year_keys][semester]
+                        for course in courses[year_keys][semester]:
+                            if semester_data["semester_average"] == 0 and course not in semester_data:
+                                semester_data[course] = courses[year_keys][semester][course]
+                                
+                                
 
-        # Calculate number of months
-        months = (today.year - start_date.year) * 12 + (today.month - start_date.month)
 
-        # Optionally: include partial month if today is past the start day
-        if today.day >= start_date.day:
-            months += 1
-        
-        if months >= 5:
 
-            year = input("Enter the year you want to register for courses (e.g., 1): ").strip().upper()
-            year_ = "Year " + year 
-            semester = input("Enter the semester you want to register for courses (e.g., 1): ").strip().upper()
-            semester_ = "semester " + semester
-            courses = data[username]["courses_completed"][year_]
-            if year_ not in courses:
-                print(f"No courses available for {year_}.")
-                return
-            if semester_ not in courses[year_]:
-                print(f"No courses available for {year_} {semester_}.")
-                return
-            print(f"Available courses for {year_} {semester_}:")
-            for course, details in data["SECE"][year_][semester_]:
-                print(f"{course}: {details['ects']} ECTS")
-            
-            if year == "1" and semester == "1" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "1" and semester == "2" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "2" and semester == "1" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "2" and semester == "2" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "3" and semester == "1" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "3" and semester == "2" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "4" and semester == "1" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "4" and semester == "2" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "5" and semester == "1" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            elif year == "5" and semester == "2" and len(courses[year_][semester_]) == 0:
-                data[username]['courses_completed'][year_][semester_] = data["SECE"][year_][semester_]
-            else:
-                print("You have already registered for all courses.")
-        else:
-            print("You haven't finished the previous semester. Due to this courses for the next semester are not available.")
+
     except Exception as e:
         print(f"The error occurred: {e}")
+
+
+def add_course():
+    pass
+
+def drop_course():
+    pass

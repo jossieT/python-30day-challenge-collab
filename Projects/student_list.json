@@ -48,6 +48,9 @@
             "ALENE BIRESAW",
             " AYEHUSH ALEMU"
         ],
+        "degrees": {
+            "Bachelor of Science": 0
+        },
         "bachelor of science": {
             "computer science": {
                 "Year 1": {
@@ -151,6 +154,9 @@
             "SMENEH ABEJE",
             "BELETECH BELAY"
         ],
+        "degrees": {
+            "Bachelor of Science": 0
+        },
         "Masters Degrees": {
             "midwifery": {
                 "Year 1": {
@@ -230,13 +236,17 @@
         "marital status": "single",
         "registration_year": "2024-10-10",
         "graduation_year": "2021-10-10",
+        
         "School_info": {
             "university_name": "Addis Ababa univesity",
             "college": "Addis Ababa Institute of Technology"
         },
-        "degree_level": {
+        "degrees": {
             "Bachelor of Science": 0
         },
+
+        "dropped_courses": [],
+
         "bachelor of science": {
             "Electrical and Computer Engineering": {
                 "Year 1": {
@@ -329,7 +339,8 @@
             "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
         }
     },
-    "SECE": {
+
+    "electrical and computer engineering": {
         "teachers": {
             "Solomon Nigusu": {
                 "courses_to_teach": [
@@ -403,8 +414,10 @@
                 "username": "mekdesalemayehu",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
-            },
-            "bachelor_of_science": {
+            }
+        },
+            "courses": {
+               " bachelor of science":{ 
                 "Year 1": {
                     "Semester 1": {
                         "Applied Mathematics I": {
@@ -665,7 +678,7 @@
                         "VLSI Design": {
                             "ects": 5,
                             "stream": [
-                                "computer"
+                                "computer", "electronics"
                             ]
                         },
                         "Software Engineering": {
@@ -782,7 +795,13 @@
     },
     "study_years": {
         "bachelor of science": {
-            "other social sciences": 4,
+            "english and literature": 4,
+            "georgraphy and environmental studies": 4,
+            "political science and international relations": 4,
+            "history and heritage management": 4,
+            "special needs and inclusive education": 4,
+            "foreign languages and literature": 4,
+            "journalism and communication": 4,
             "business and economic sciences": 4,
             "natural and computational sciences": 4,
             "electrical and computer engineering": 5,
@@ -868,35 +887,35 @@
     },
     "Colleges": {
         "AAiT": {
-            "SECE": [
+            "electrical and computer engineering": [
                 "Communication Engineering",
                 "Computer Engineering",
                 "Control Engineering",
                 "Electronics Engineering",
                 "Power Engineering"
             ],
-            "SMEE": [
+            "mechanical and industrial engineering": [
                 "Thermal Engineering",
                 "Industrial Engineering"
             ],
-            "SBME": "School of Biomedical Engineering",
-            "SCBE": "School of Chemical and Biomedical Engineering",
-            "SSIS": [
+            "biomedical engineering": "School of Biomedical Engineering",
+            "chemical and biomedical engineering": "School of Chemical and Biomedical Engineering",
+            "softaware and it engineering": [
                 "IT",
                 "AI",
                 "Cyber Security",
                 "Data Science",
                 "Machine Learning"
             ],
-            "SCIE": "School of Civil and Environmental Engineering"
+            "civil and environmental engineering": "School of Civil and Environmental Engineering"
         },
-        "CBE": [
+        "business and economics": [
             "Economics",
             "Public Administration and Management",
             "IS",
             "Business Management"
         ],
-        "CNCS": [
+        "natural and computational sciences": [
             "Computer Science",
             "Physics",
             "Biology",

@@ -1,7 +1,19 @@
 import file_access as fa
 import student_page as sp
 import password_encryption as pe
+import re
 def login():
+
+    pattern = r'^(?=.*[^A-Za-z0-9]).{8,}$'
+
+    password = input("Enter your password (at least 8 characters, including a special character): ")
+
+    if re.match(pattern, password):
+        print("✅ Valid password")
+    else:
+        print("❌ Invalid password")
+
+
     username = input("Enter your username:")
     password = input("Enter you password:")
     data = fa.load_data()

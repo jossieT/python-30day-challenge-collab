@@ -83,6 +83,10 @@ def new_student():
         "university_name":input("Which university is the student placed?:"),
         "college": input("What college is he assigned in?:")
     }
+
+    degree = {
+        f"{degree_level}": 0
+    }
     
 
     new_student = {
@@ -105,7 +109,8 @@ def new_student():
         "languages": languages,
         "memberships": memberships,
         "scholarship": scholarship,
-        "parents": parents
+        "parents": parents,
+        "degrees": degree,
     }
 
     try:

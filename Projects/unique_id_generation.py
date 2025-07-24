@@ -1,21 +1,41 @@
 import random
-def generate_student_id(first_name, second_name, last_name, registration_year):
-    # Ensure names are long enough
-    if len(first_name) < 1 or len(second_name) < 1 or len(last_name) < 1:
-        return "Invalid name lengths"
+import degrees_menu as dm
+import file_access as fa
+def generate_student_id(degree_level, type_of_registration, current_year):
+   
+    try:
+        student_data = fa.load_data()
+        existing_ids = student_data.get("student_id", [])
 
-    start_of_id:str = first_name[0] + second_name[0] + last_name[0] 
-    # Generate 4 unique digits (0-9)
-    unique_digits = random.sample(range(10), 4)
+        # If all 9000 possible 4-digit numbers are used, raise an error
+        if len(existing_ids) >= 9000:
+            raise ValueError("All possible 4-digit IDs are used.")
 
-    # Convert to a single string
-    middle_of_id = ''.join(str(digit) for digit in unique_digits)
+        # Generate a unique new ID
+        while True:
+            new_id = random.randint(1000, 9999)
+            if new_id not in existing_ids:
+                break  # Unique ID found
 
-    year = registration_year.strip().split("-")[0]
+        # Save the ID
+        student_data.setdefault("student_id", []).append(new_id)
 
-    last_of_id = registration_year[-2] + registration_year[-1]
-    student_id = start_of_id.upper() + "/" + middle_of_id + "/" + last_of_id
-    return student_id
+        # Format based on degree level and registration type
+        if degree_level in student_data.get("bachelor of science", []):
+            prefix = "BSR" if type_of_registration == "Regular" else "BSE"
+        elif degree_level in student_data.get("Masters Degrees", []):
+            prefix = "MSR" if type_of_registration == "Regular" else "MSE"
+        elif degree_level in student_data.get("PhD", []):
+            prefix = "PDR" if type_of_registration == "Regular" else "PDE"
+        else:
+            raise ValueError("Invalid degree level.")
+
+        return f"{prefix}/{new_id:04d}/{current_year}"
+
+    except ValueError as e:
+        print(f"Error: {e}")
+        return None
+
 def default_student_password() -> str:
     return "Welcome2aau"
 

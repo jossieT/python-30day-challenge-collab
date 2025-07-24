@@ -248,6 +248,7 @@
         "dropped_courses": [],
 
         "bachelor of science": {
+            "type_of_registration": "Regular",
             "Electrical and Computer Engineering": {
                 "Year 1": {
                     "Semester 1": {
@@ -348,7 +349,7 @@
                     "Applied Electronics II",
                     "Electrical Engineering Lab I"
                 ],
-                "username": "solomonnigussu",
+                "username": "solomon.nigussu@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "electronics"
             },
@@ -357,7 +358,7 @@
                     "Digital Signal Processing",
                     "Network Analysis and Sysnthesis"
                 ],
-                "username": "bisratderebssa",
+                "username": "bisrat.derebssa@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
             },
@@ -366,7 +367,7 @@
                     "Computer Architecture and Organization",
                     "Introduction to Compilers"
                 ],
-                "username": "melakeserawit",
+                "username": "melake.serawit@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
             },
@@ -376,7 +377,7 @@
                     "Machine Learning",
                     "Thesis"
                 ],
-                "username": "fitsumassamnew",
+                "username": "fitsum.assamnew@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
             },
@@ -385,7 +386,7 @@
                     "Introduction to Communication Systems",
                     "Data Communication and Computer Systems"
                 ],
-                "username": "bethelhemseifu",
+                "username": "bethelhem.seifu@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
             },
             "Abebe Tesfaye": {
@@ -393,7 +394,7 @@
                     "Introduction to Control Engineering",
                     "Embedded Systems"
                 ],
-                "username": "abebetesfaye",
+                "username": "abebe.tesfaye@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "control"
             },
@@ -402,7 +403,7 @@
                     "Introduction to Electrical Machines",
                     "Electrical Materials and Technology"
                 ],
-                "username": "hannatesfaye",
+                "username": "hanna.tesfaye@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "ECE"
             },
@@ -411,7 +412,7 @@
                     "Digital Logic Design",
                     "Object Oriented Programming (Java)"
                 ],
-                "username": "mekdesalemayehu",
+                "username": "mekdes.alemayehu@aait.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
                 "stream": "computer"
             }
@@ -864,7 +865,13 @@
             "sychatric nursing": 2
         },
         "PhD": {
-            "other social sciences": 3,
+            "english and literature": 3,
+            "georgraphy and environmental studies": 3,
+            "political science and international relations": 3,
+            "history and heritage management": 3,
+            "special needs and inclusive education": 3,
+            "foreign languages and literature": 3,
+            "journalism and communication": 3,
             "business and economic sciences": 3,
             "natural and computational sciences": 3,
             "electrical and computer engineering": 3,
@@ -943,5 +950,7 @@
     },
     "history": {
         "action_doer": {}
-    }
+    },
+
+    "student_id": []
 }

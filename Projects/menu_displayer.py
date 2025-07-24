@@ -1,43 +1,56 @@
 import os
 import add_new_student as ans
+import os
+from colorama import Fore, Style, init
+
+init(autoreset=True)  # Automatically reset color after each print
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def main_menu(menu_items:list):
+    clear_screen() # Clear the screen before displaying the menu
+    width = 60
+    border = "#"
+    print(Fore.CYAN + border * width)
+
+    for i, item in enumerate(menu_items, start=1):
+        line = f"{Fore.YELLOW}{i:>10}. {Fore.MAGENTA}{item[3:]}"  # Right-align number, reuse item text
+        print(Fore.CYAN + border + " " + line.ljust(width + 7) + Fore.CYAN + border)  # Left-justified
+
+    print(Fore.CYAN + border * width)
+
+
 def admin_menu():
-    print("#"*150)
-    print("##" + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t1. Save and Exit\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t2. Go To Main Menu\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t3. Add New Student\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t4. Remove The Student Record\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t5. View Student Records\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t6. Search For Student\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t7. Edit The Score \t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t8. Clear The Screen\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    
-    print("#"*150)
+    menu_items = [
+        "1. Save and Exit",
+        "2. Go To Main Menu",
+        "3. Add New Student",
+        "4. Remove The Student Record",
+        "5. View Student Records",
+        "6. Search For Student",
+        "7. Edit The Score",
+        "8. Clear The Screen"
+    ]
+    main_menu(menu_items)
 
 def teacher_menu():
-    print("#"*150)
-    print("##" + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t1. Go To Main Menu\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t2. View Student Records\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t3. Search For Student\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t4. Generate The Student Report\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    
-    print("##" + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    
-    print("#"*150)
-
+    menu_items = [
+        "1. Go To Main Menu",
+        "2. View Student Records",
+        "3. Search For Student",
+        "4. Generate The Student Report"
+    ]
+    main_menu(menu_items)
 def student_menu():
-    print("#"*150)
-    print("##" + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t1. Go To Main Menu\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t2. View Student Records\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t3. Search For Student\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t4. Generate Your Report\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t5. Print Course Checklist \t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    print("##" + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
-    
-    print("#"*150)
+    menu_items = [
+        "1. Go To Main Menu",
+        "2. View Student Records",
+        "3. Search For Student",
+        "4. Generate Your Report",
+        "5. Print Course Checklist"
+    ]
+    main_menu(menu_items)
     
 
 def display_menu():
@@ -70,6 +83,3 @@ def display_menu():
             else:
                 exit()
 
-
-if __name__ == "__main__":
-    display_menu()

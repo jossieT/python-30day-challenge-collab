@@ -28,57 +28,57 @@ def generate_degree_structure(length_of_years, department:str):
 def new_student():
     data = fa.load_data()
 
-    first_name = input("Enter the student's first name: ").strip().upper()
-    second_name = input("Enter the student's second name: ").strip().upper()
-    last_name = input("Enter the student's last name: ").strip().upper()
+    first_name = input("Enter the student's first name: ").strip().capitalize()
+    second_name = input("Enter the student's second name: ").strip().capitalize()
+    last_name = input("Enter the student's last name: ").strip().capitalize()
     today = date.today()
     registration_year = today.strftime("%Y-%m-%d")
     birth_date = input("Enter the birth date of student (YYYY-MM-DD): ").strip()
 
-    gender = input("Enter the student's gender: ").strip().upper()
+    gender = input("Enter the student's gender: ").strip().capitalize()
     email = input("Enter the student's email: ").strip().lower()
-    nationality = input("Enter the nationality of student:").upper()
+    nationality = input("Enter the nationality of student:").capitalize()
     phone_number = input("Enter the phone number of student:").strip()
     address = {
-        "region": input("Enter the region of student:").strip().upper(),
-        "city": input("Enter the city of student:").strip().upper(),
-        "sub_city": input("Enter the sub-city of student:").strip().upper(),
-        "woreda": input("Enter the woreda of student:").strip().upper(),
-        "kebele": input("Enter the kebele of student:").strip().upper(),
-        "house_number": input("Enter the house number of student:").strip().upper(),
-        "street": input("Enter the street of student:").strip().upper()
+        "region": input("Enter the region of student:").strip().capitalize(),
+        "city": input("Enter the city of student:").strip().capitalize(),
+        "sub_city": input("Enter the sub-city of student:").strip().capitalize(),
+        "woreda": input("Enter the woreda of student:").strip().capitalize(),
+        "kebele": input("Enter the kebele of student:").strip().capitalize(),
+        "house_number": input("Enter the house number of student:").strip().capitalize(),
+        "street": input("Enter the street of student:").strip().capitalize()
     }
 
-    marital_status = input("Enter the marital status of student:").strip().upper()
-    languages = input("Enter the languages spoken by student (comma-separated):").strip().upper().split(",")
-    memberships = input("Enter the memberships of student (comma-separated):").strip().upper().split(",")
-    scholarship = input("Enter the scholarship status of student:").strip().upper()
-    parents = input("Enter the name of student's parents status of student:").strip().upper().split(",")
+    marital_status = input("Enter the marital status of student:").strip().capitalize()
+    languages = input("Enter the languages spoken by student (comma-separated):").strip().capitalize().split(",")
+    memberships = input("Enter the memberships of student (comma-separated):").strip().capitalize().split(",")
+    scholarship = input("Enter the scholarship status of student:").strip().capitalize()
+    parents = input("Enter the name of student's parents status of student:").strip().capitalize().split(",")
 
 
     contact_info = {
-        "first_name_contact_person": input("Enter the contact person's first name:").strip().upper(),
-        "last_name_contact_person": input("Enter the contact person's last name:").strip().upper(),
+        "first_name_contact_person": input("Enter the contact person's first name:").strip().capitalize(),
+        "last_name_contact_person": input("Enter the contact person's last name:").strip().capitalize(),
         "phone number": input("Enter the contact person's phone number:").strip(),
         "email": input("Enter the contact person's email:").strip().lower()
     }
-    
-    student_id =  uig.generate_student_id(first_name, second_name, last_name, registration_year)
+
+    type_of_registration = input("Enter the type of registration (Regular/Extension): ").strip().capitalize()
+
+    length_of_years, degree_level, department = dm.degrees_menu()
+    degree_structure = generate_degree_structure(length_of_years, department)
+
+    student_id = uig.generate_student_id(degree_level, type_of_registration, registration_year.split("-")[0][2:])
+
+
+    # Calculate age based on birth date
+    age = datetime.now().year - int(birth_date.split("-")[0])
+
     login_credentials = {
         "username": student_id,
         # Default password, must be changed later by the user at the first login
         "password": pe.hash_password(uig.default_student_password())  
     }
-
-
-
-    length_of_years, degree_level, department = dm.degrees_menu()
-    degree_structure = generate_degree_structure(length_of_years, department)
-
-
-
-    # Calculate age based on birth date
-    age = datetime.now().year - int(birth_date.split("-")[0])
     school_info = {
         "university_name":input("Which university is the student placed?:"),
         "college": input("What college is he assigned in?:")
@@ -132,6 +132,7 @@ def new_student():
 
         elif department not in data[student_id][degree_level]:
             data[student_id][degree_level][department] = degree_structure
+            data[student_id][degree_level][department]["type_of_registration"] = type_of_registration
 
         else:
             print(f"The student is already registered for {degree_level} in {department}")

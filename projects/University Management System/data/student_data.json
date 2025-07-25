@@ -1,1 +1,36 @@
-[]
+[
+    {
+        "student_id": "STUD2025-005",
+        "program_level": "Undergraduate",
+        "name": "Yosef Teshome",
+        "gender": "M",
+        "age": 28,
+        "enrollment_date": "2025-07-25",
+        "university": "Addis Ababa University",
+        "department": "CS",
+        "year_of_study": 1,
+        "status": "Active",
+        "year": 2025,
+        "student_type": "Regular",
+        "semester": "I",
+        "courses": [],
+        "gpa": 0.0
+    },
+    {
+        "student_id": "STUD2025-006",
+        "program_level": "Undergrad",
+        "name": "Mulat Yazew",
+        "gender": "M",
+        "age": 28,
+        "enrollment_date": "2025-07-25",
+        "university": "Addis Ababa University",
+        "department": "CS",
+        "year_of_study": 1,
+        "status": "Active",
+        "year": 2025,
+        "student_type": "Regular",
+        "semester": "I",
+        "courses": [],
+        "gpa": 0.0
+    }
+]

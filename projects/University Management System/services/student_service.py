@@ -13,11 +13,18 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 from utils.id_generator import id_generator
 from utils.file_handler import load_data, append_data, save_data
 STUDENT_FILE = os.path.join(BASE_DIR, '..', 'data', 'student_data.json')
+PROGRAM_AND_DEPARTMENT_FILE = os.path.join(BASE_DIR, '..', 'data', 'program_and_department.json')
 students = load_data(STUDENT_FILE)
+programs = load_data(PROGRAM_AND_DEPARTMENT_FILE)
+program_levels = []
+for program in programs:
+    if program["program_level"] not in program_levels:
+        program_levels.append(program["program_level"])
+print(program_levels)
 
 program_level = ""
 print("Choose student's Program Level :")
-program_levels = ['Undergraduate', 'Postgraduate']
+
 for i, level in enumerate(program_levels, start=1):
     print(f"{i}. {level}")
 choice = int(input("Enter your choice (1 or 2): "))

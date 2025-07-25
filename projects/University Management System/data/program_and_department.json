@@ -1,20 +1,17 @@
-[
-  {
-    "program_level": "Undergraduate",
-    "departments": [
+{
+  "program_levels": ["Undergraduate", "Postgraduate"],
+  "departments": {
+    "Undergraduate": [
       "Computer Science",
       "Information Technology",
       "Software Engineering",
       "Data Science"
-    ]
-  },
-  {
-    "program_level": "Postgraduate",
-    "departments": [
+    ],
+    "Postgraduate": [
       "Data Analytics",
       "Cyber Security",
       "Cloud Computing",
       "AI and Machine Learning"
     ]
   }
-]
+}

@@ -2,7 +2,6 @@ import json
 from collections import Counter
 import re
 import string
-import csv
 
 #Exercises: Day 19
 #Write a function which count number of lines and number of words in a text.
@@ -102,62 +101,6 @@ print(find_most_common_words("./data/donald_speech.txt", 5))
 print(find_most_common_words("./data/melina_trump_speech.txt", 5))
 print(find_most_common_words("./data/michelle_obama_speech.txt", 5))
 print(find_most_common_words("./data/obama_speech.txt", 5))
-
-#Find the 10 most repeated words in the romeo_and_juliet.txt
-def word_count_most_repeated(filename, num):
-    with open(filename) as f:
-        content = f.read()
-    to_lower_case = content.lower()
-
-    text = to_lower_case.translate(str.maketrans('', '', string.punctuation))
-    words = text.split()
-    word_counts = {}
-
-    for word in words:
-        if word in word_counts:
-            word_counts[word] += 1
-        else:
-            word_counts[word] = 1
-
-    sorted_words = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
-
-    return sorted_words[:num]
-
-print(word_count_most_repeated("./data./romeo_and_juliet.txt", 10))
-
-
-#Read the hacker news csv file and find out: a) Count the number of lines containing python or Python
-# b) Count the number lines containing JavaScript, javascript or Javascript c) Count the number lines containing Java and not JavaScript
-def analyze_hacker_news_csv(file_path):
-    python_count = 0
-    js_count = 0
-    java_only_count = 0
-
-    with open(file_path, 'r', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        for row in reader:
-            line = ' '.join(row).lower()
-
-            # a) Contains "python"
-            if 'python' in line:
-                python_count += 1
-
-            # b) Contains any variant of JavaScript
-            if 'javascript' in line:
-                js_count += 1
-
-            # c) Contains "java" but not "javascript"
-            if 'java' in line and 'javascript' not in line:
-                java_only_count += 1
-
-    print("a) Lines containing 'python' or 'Python':", python_count)
-    print("b) Lines containing 'JavaScript', 'javascript', or 'Javascript':", js_count)
-    print("c) Lines containing 'Java' but not any 'JavaScript' variant:", java_only_count)
-
-
-file_path = './data/hacker_news.csv'
-analyze_hacker_news_csv(file_path)
-
 
 
 

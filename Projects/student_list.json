@@ -1,5 +1,5 @@
 {
-    "AAB/0512/25": {
+    "BSR/5212/25": {
         "student_id": "AAB/0512/20",
         "first_name": "ABAY",
         "second_name": "ALENE",
@@ -104,7 +104,7 @@
             }
         }
     },
-    "DSC/9371/19": {
+    "MSR/9371/19": {
         "student_id": "DSC/9371/19",
         "first_name": "DERESE",
         "second_name": "SMENEH",
@@ -186,7 +186,7 @@
             }
         }
     },
-    "MYC/5434/10": {
+    "BSR/5434/10": {
         "first_name": "Mulat",
         "second_name": "Yazew",
         "last_name": "Chekol",
@@ -332,89 +332,326 @@
     },
     "admin": {
         "MulatYazew": {
-            "username": "MulatYazew",
+            "username": "mulat.yazew@aau.edu.et",
             "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
         },
         "YosefTeshome": {
-            "username": "YosefTeshome",
+            "username": "yosef.teshome@aau.edu.et",
             "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
         }
     },
 
     "teachers": {
-        "Electrical and Computer Engineering":{
-                "Solomon Nigusu": {
+        "existing_emails": [],
+        "Electrical and Computer Engineering": {
+            "solomon.nigussu@aau.edu.et": {
                 "courses_to_teach": [
                     "Applied Electronics",
                     "Applied Electronics II",
                     "Electrical Engineering Lab I"
                 ],
-                "username": "solomon.nigussu@aait.edu.et",
+                "start_year": "2010-01-26",
+                "first_name": "Solomon",
+                "last_name": "Nigussu",
+                "username": "solomon.nigussu@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "electronics"
+                "stream": "Electronics Engineering",
+                "degree_information": {
+                   "Bachelor of Science": {
+                       "university": "Addis Ababa University",
+                       "specialization": "Electronics Engineering",
+                       "research": "Design and Implementation of a Smart Home Automation System",
+                       "year_of_study": "2009-2013"
+                   },
+                    "Masters Degree": {
+                        "university": "University of California, Berkeley",
+                        "specialization": "Electronics Engineering",
+                        "research": "Advanced Circuit Design for IoT Applications",
+                        "year_of_study": "2014-2016"
+                    },
+                    "PhD": {
+                        "university": "University of Michigan",
+                        "specialization": "Embedded Systems",
+                        "research": "High-Performance Embedded Systems for Real-Time Applications",
+                        "year_of_study": "2018-2022"
+                    }
+                },
+
+
+                "research_interests": [
+                    "Embedded Systems",
+                    "Control Systems",
+                    "Robotics",
+                    "VLSI Design",
+                    "IoT Systems",
+                    "Machine Learning"
+                ]
             },
-            "Bisrat Derebssa": {
+            "bisrat.derebssa@aau.edu.et": {
                 "courses_to_teach": [
                     "Digital Signal Processing",
                     "Network Analysis and Sysnthesis"
                 ],
-                "username": "bisrat.derebssa@aait.edu.et",
+                "start_year": "2007-10-10",
+                "first_name": "Bisrat",
+                "last_name": "Derebssa",
+                "username": "bisrat.derebssa@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "computer"
+                "stream": "Computer Engineering",
+                "degree_information": {
+                    "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Computer Engineering",
+                        "research": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2006-2010"
+                    },
+                    "Masters Degree": {
+                        "university": "Massachusetts Institute of Technology (MIT)",
+                        "specialization": "Computer Engineering",
+                        "research": "Advanced Algorithms for Data Processing",
+                        "year_of_study": "2011-2013"
+                    },
+                    "PhD": {
+                        "university": "Stanford University",
+                        "specialization": "Computer Networks",
+                        "research": "High-Speed Network Protocols for Large-Scale Systems",
+                        "year_of_study": "2014-2018"
+                    }
+                },
+                "research_interests": [
+                    "Embedded Systems",
+                    "signal processing",
+                    "natural language processing",
+                    "computer vision",
+                    "machine learning",
+                    "artificial intelligence"
+
+                ]
             },
-            "Melake Serawit": {
+            "melake.serawit@aau.edu.et": {
                 "courses_to_teach": [
                     "Computer Architecture and Organization",
                     "Introduction to Compilers"
                 ],
-                "username": "melake.serawit@aait.edu.et",
+                "start_year": "2016-02-12",
+                "first_name": "Melake",
+                "last_name": "Serawit",
+                "username": "melake.serawit@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "computer"
+                "stream": "Computer Engineering",
+                "degree_information": {
+                    "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Computer Engineering",
+                        "research": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2009-2013"
+                    },
+                    "Masters Degree": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Computer Engineering",
+                        "research": "Advanced Algorithms for Data Processing",
+                        "year_of_study": "2014-2016"
+                    },
+                    "PhD": {
+                        "university": "",
+                        "specialization": "",
+                        "research": "",
+                        "year_of_study": ""
+                    }
+                },
+                "research_interests": [
+                    "Embedded Systems",
+                    "compiler design",
+                    "computer architecture",
+                    "operating systems",
+                    "distributed systems",
+                    "machine learning",
+                    "artificial intelligence"
+                ]
             },
-            "Fitsum Assamnew": {
+            "fitsum.assamnew@aau.edu.et": {
                 "courses_to_teach": [
                     "Software Engineering",
                     "Machine Learning",
                     "Thesis"
                 ],
-                "username": "fitsum.assamnew@aait.edu.et",
+                "start_year": "2015-30-09",
+                "stream": "Computer Engineering",
+                "first_name": "Fitsum",
+                "last_name": "Assamnew",
+                "username": "fitsum.assamnew@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "computer"
+                "degree_information": {
+                    "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Computer Engineering",
+                        "research": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2009-2013"
+                    },
+                    "Masters Degree": {
+                        "university": "University of Michigan",
+                        "specialization": "Computer Engineering",
+                        "research": "Advanced Algorithms for Data Processing",
+                        "year_of_study": "2014-2016"
+                    },
+                    "PhD": {
+                        "university": "University of Michigan",
+                        "specialization": "Artificial Intelligence",
+                        "research": "Deep Learning Techniques for Image Recognition",
+                        "year_of_study": "2016-2020"
+                    }
+                },
+                "research_interests": [
+                    "Embedded Systems",
+                    "machine learning",
+                    "artificial intelligence",
+                    "computer vision",
+                    "natural language processing",
+                    "data science"
+                ]
             },
-            "Bethelhem Seifu": {
+            "bethelhem.seifu@aau.edu.et": {
                 "courses_to_teach": [
                     "Introduction to Communication Systems",
                     "Data Communication and Computer Systems"
                 ],
-                "username": "bethelhem.seifu@aait.edu.et",
-                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u"
+                "start_year": "2017-10-09",
+                "first_name": "Bethelhem",
+                "last_name": "Seifu",
+                "username": "bethelhem.seifu@aau.edu.et",
+                "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
+                "stream": "Communication Engineering",
+                "degree_information": {
+                    "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Communication Engineering",
+                        "research": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2018-2020"
+                    },
+                    "Masters Degree": {
+                        "university": "Massachusetts Institute of Technology (MIT)",
+                        "specialization": "Communication Engineering",
+                        "research": "Advanced Algorithms for Data Processing",
+                        "year_of_study": "2021-2024"
+                    },
+                    "PhD": {
+                        "university": "",
+                        "specialization": "",
+                        "research": "",
+                        "year_of_study": ""
+                    }
+                },
+                "research_interests": [
+                    "Wireless Communication",
+                    "network design",
+                    "communication systems",
+                    "network protocols",
+                    "signal processing",
+                    "machine learning"
+                ]
             },
-            "Abebe Tesfaye": {
+            "abebe.tesfaye@aau.edu.et": {
                 "courses_to_teach": [
                     "Introduction to Control Engineering",
                     "Embedded Systems"
                 ],
-                "username": "abebe.tesfaye@aait.edu.et",
+                "start_year": "2018-05-20",
+                "first_name": "Abebe",
+                "last_name": "Tesfaye",
+                "username": "abebe.tesfaye@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "control"
+                "stream": "control engineering",
+                "degree_information": {
+                    "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Control Engineering",
+                        "research": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2010-2021"
+                    },
+                    "Masters Degree": {
+                        "university": "Massachusetts Institute of Technology (MIT)",
+                        "specialization": "Control Engineering",
+                        "research": "Advanced Algorithms for Data Processing",
+                        "year_of_study": "2022-2024"
+                    },
+                    "PhD": {
+                        "university": "",
+                        "specialization": "",
+                        "research": "",
+                        "year_of_study": ""
+                    }
+                }
             },
-            "Hanna Tesfaye": {
+            "hanna.tesfaye@aau.edu.et": {
                 "courses_to_teach": [
                     "Introduction to Electrical Machines",
                     "Electrical Materials and Technology"
                 ],
-                "username": "hanna.tesfaye@aait.edu.et",
+                "start_year": "2021-09-10",
+                "first_name": "Hanna",
+                "last_name": "Tesfaye",
+                "username": "hanna.tesfaye@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "ECE"
+                "stream": "ECE",
+                "degree_information": {
+                    "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Communication Engineering",
+                        "research": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2016-2021"
+                    },
+                    "Masters Degree": {
+                        "university": "",
+                        "specialization": "",
+                        "research": "",
+                        "year_of_study": ""
+                    },
+                    "PhD": {
+                        "university": "",
+                        "specialization": "",
+                        "research": "",
+                        "year_of_study": ""
+                    }
+                },
+                "research_interests": [
+                    "Wireless Communication",
+                    "network design",
+                    "communication systems",
+                    "network protocols",
+                    "signal processing",
+                    "machine learning"
+                ]
+            
             },
-            "Mekdes Alemayehu": {
+            "mekdes.alemayehu@aau.edu.et": {
                 "courses_to_teach": [
                     "Digital Logic Design",
                     "Object Oriented Programming (Java)"
                 ],
-                "username": "mekdes.alemayehu@aait.edu.et",
+                "start_year": "2009-09-09",
+                "first_name": "Mekdes",
+                "last_name": "Alemayehu",
+                "username": "mekdes.alemayehu@aau.edu.et",
                 "password": "$2b$12$uG0vcQ6V60MrzhK9TuYEhe.gVSUN1bxrTz4hdoD63gykw7eEzvQ0u",
-                "stream": "computer"
+                "stream": "computer",
+                "Bachelor of Science": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Control Engineering",
+                        "thesis": "Development of a Real-Time Data Processing System",
+                        "year_of_study": "2010-2021"
+                    },
+                "Masters Degree": {
+                        "university": "Addis Ababa University",
+                        "specialization": "Control Engineering",
+                        "research": "Advanced Algorithms for Data Processing",
+                        "year_of_study": "2022-2024"
+                    },
+                "PhD": {
+                        "university": "",
+                        "specialization": "",
+                        "dissertation": "",
+                        "year_of_study": ""
+                    }
             }
         }
     },
@@ -897,8 +1134,10 @@
             "sychatric nursing": 3
         }
     },
-    "Colleges": {
-        "AAiT": {
+    "university": {
+        "university_name":"Addis Ababa University",
+        "colleges": {
+            "aait":{
             "electrical and computer engineering": [
                 "Communication Engineering",
                 "Computer Engineering",
@@ -953,4 +1192,5 @@
     },
 
     "student_id": []
+}
 }

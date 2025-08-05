@@ -16,8 +16,8 @@ def line_and_word_counter(file):
     try:
         with open(f'D:\python-30day-challenge-collab\exercises\data/{file}') as line_reader:
             lines = line_reader.readlines()
-            line_count = len(lines)
-            print(Fore.YELLOW + f"The number of lines in your file {file} are {Fore.RED} {line_count}")
+        line_count = len(lines)
+        print(Fore.YELLOW + f"The number of lines in your file {file} are {Fore.RED} {line_count}")
 
         with open(f'D:\python-30day-challenge-collab\exercises\data/{file}') as word_reader:
             words = re.findall(r'\b\w+\b', word_reader.read().lower())
@@ -46,7 +46,7 @@ def most_spoken_languages(file_name, number_of_languages):
         most_spoken = sorted(language_count.items(), key=lambda x: x[1], reverse=True)[:number_of_languages]
         print(Fore.GREEN + "Most spoken languages:")
         for language, count in most_spoken:
-            print(f"({Fore.RED} + {language}: {Fore.GREEN} + {count})")
+            print(f"({Fore.RED}  {language}: {Fore.GREEN}  {count})")
 
     except FileNotFoundError:
         print("File Not Found.")
@@ -109,12 +109,12 @@ def find_most_common_words(file_name, numbers_to_display):
             words = re.findall(r'\b\w+\b', file.lower())
             word_dictionary = {}
             word_list = []
-            for i in range(len(words)):
-                if words[i] in word_dictionary:
-                    word_dictionary[words[i]] += 1
+            for word in words:
+                if word in word_dictionary:
+                    word_dictionary[word] += 1
                 else:
-                    word_dictionary[words[i]] = 1
-            most_common_words = sorted(word_dictionary, key=lambda x: x[1], reverse=True)[:numbers_to_display]
+                    word_dictionary[words] = 1
+            most_common_words = sorted(word_dictionary.items(), key=lambda x: x[1], reverse=True)[:numbers_to_display]
             for key, value in most_common_words:
                 word_list.append((key, value))
             return word_list

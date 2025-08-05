@@ -1,36 +1,32 @@
-import csv
-from colorama import Style, Fore, init
-init(autoreset=True)
+import re
 
-def keyword_filteration():
-    # Initialize Counters
-    python_count = 0
-    javascript_count = 0
-    java_only_count = 0
+def find_most_common_words(file_name, numbers_to_display):
+    try:
+        with open(f"D:\python-30day-challenge-collab\exercises\data/{file_name}", 'r', encoding='utf-8') as f:
+            file = f.read()
+            words = re.findall(r'\b\w+\b', file.lower())
+            word_dictionary = {}
+            word_list = []
+            for word in words:
+                if word in word_dictionary:
+                    word_dictionary[word] += 1
+                else:
+                    word_dictionary[word] = 1
+            most_common_words = sorted(word_dictionary.items(), key=lambda x: x[1], reverse=True)[:numbers_to_display]
+            for key, value in most_common_words:
+                word_list.append((key, value))
+            return word_list
 
-    # Open CSV File
-    with open('d:\python-30day-challenge-collab\exercises\data\hacker_news.csv', 'r', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        for row in reader:
-            # Join all columns into one line of text (in case keywords are in any column)
-            line = ' '.join(row).lower()
-
-            # a) Count lines containing "python" (case-insensitive)
-            if 'python' in line:
-                python_count += 1
-
-            # b) Count lines containing "javascript" (all variants)
-            if 'javascript' in line:
-                javascript_count += 1
-
-            # c) Count lines containing "java" but NOT "javascript"
-            if 'java' in line and 'javascript' not in line:
-                java_only_count += 1
-            
-    # Print Results
-    print(f" {Fore.CYAN} Lines containing 'Python' or 'python': {Fore.MAGENTA } {python_count}")
-    print(f"{Fore.CYAN} Lines containing 'JavaScript' (any case variation): {Fore.MAGENTA } {javascript_count}")
-    print(f"{Fore.CYAN} Lines containing 'Java' but not 'JavaScript': {Fore.MAGENTA } {java_only_count}")
+    except FileNotFoundError as e:
+        print(f"An error occurred: {e}")
+    except TypeError as e:
+        print(f"An error occurred: {e}")
 
 
-keyword_filteration()
+
+
+
+
+
+if __name__ == "__main__":
+    print(find_most_common_words("donald_speech.txt", 10))

@@ -70,6 +70,33 @@ if weights_metric:
 else:
     print("No weight data found.")
 
+import requests
+import numpy as np
+
+# Fetch data
+url = "https://api.thecatapi.com/v1/breeds"
+response = requests.get(url)
+cat_breeds_data = response.json()
+
+# Parse lifespans
+lifespans = []
+for breed in cat_breeds_data:
+    if "life_span" in breed:
+        parts = breed["life_span"].split("-")
+        if len(parts) == 2:
+            min_yrs, max_yrs = map(float, [p.strip() for p in parts])
+            lifespans.append((min_yrs + max_yrs) / 2)  # Midpoint
+
+# Calculate stats
+if lifespans:
+    print(f"Min lifespan: {np.min(lifespans):.1f} years")
+    print(f"Max lifespan: {np.max(lifespans):.1f} years")
+    print(f"Mean lifespan: {np.mean(lifespans):.1f} years")
+    print(f"Median lifespan: {np.median(lifespans):.1f} years")
+    print(f"Standard deviation: {np.std(lifespans):.1f} years")
+else:
+    print("No lifespan data found.")
+
 
 
 

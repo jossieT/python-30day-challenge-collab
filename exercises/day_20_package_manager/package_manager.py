@@ -97,6 +97,24 @@ if lifespans:
 else:
     print("No lifespan data found.")
 
+from collections import defaultdict
 
+# Fetch data
+url = "https://api.thecatapi.com/v1/breeds"
+response = requests.get(url)
+cat_breeds_data = response.json()
+
+# Count breeds per country
+country_breed_counts = defaultdict(int)
+for breed in cat_breeds_data:
+    country = breed.get("origin", "Unknown").strip()
+    if country:
+        country_breed_counts[country] += 1
+
+# Print sorted table
+print("Country\t\tNumber of Breeds")
+print("-----------------------------")
+for country, count in sorted(country_breed_counts.items(), key=lambda x: x[1], reverse=True):
+    print(f"{country}\t\t{count}")
 
 

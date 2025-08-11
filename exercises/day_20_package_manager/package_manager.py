@@ -118,3 +118,97 @@ for country, count in sorted(country_breed_counts.items(), key=lambda x: x[1], r
     print(f"{country}\t\t{count}")
 
 
+#UCI is one of the most common places to get data sets for data science and machine learning. Read the content of UCL
+# (https://archive.ics.uci.edu/ml/datasets.php). Without additional libraries it will be difficult, so you may try it with
+# BeautifulSoup4
+
+import requests
+from bs4 import BeautifulSoup
+import csv
+from time import sleep
+
+# Constants
+BASE_URL = "https://archive.ics.uci.edu"
+DATASETS_URL = f"{BASE_URL}/datasets"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+}
+
+
+def get_soup(url):
+    """Fetch and parse a webpage."""
+    try:
+        response = requests.get(url, headers=HEADERS)
+        response.raise_for_status()
+        return BeautifulSoup(response.text, 'html.parser')
+    except requests.RequestException as e:
+        print(f"Error fetching {url}: {e}")
+        return None
+
+
+def extract_dataset_info(card):
+    """Extract dataset details from a card element."""
+    name = card.find('h3').get_text(strip=True) if card.find('h3') else "No name"
+    description = card.find('p').get_text(strip=True) if card.find('p') else "No description"
+    link = card.find('a')['href'] if card.find('a') else None
+    return {
+        "name": name,
+        "description": description,
+        "link": f"{BASE_URL}{link}" if link else "No link"
+    }
+
+
+def scrape_uci_datasets():
+    """Main scraping function."""
+    all_datasets = []
+    page = 1
+
+    while True:
+        url = f"{DATASETS_URL}?page={page}" if page > 1 else DATASETS_URL
+        print(f"Scraping page {page}...")
+
+        soup = get_soup(url)
+        if not soup:
+            break
+
+        cards = soup.select('div.p-4.border.rounded-lg')
+        if not cards:
+            break
+
+        for card in cards:
+            all_datasets.append(extract_dataset_info(card))
+
+        # Check for next page
+        next_button = soup.select_one('a[aria-label="Next"]')
+        if not next_button:
+            break
+
+        page += 1
+        sleep(1)  # Be polite to the server
+
+    return all_datasets
+
+
+def save_to_csv(datasets, filename='uci_datasets.csv'):
+    """Save datasets to CSV file."""
+    with open(filename, 'w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=['name', 'description', 'link'])
+        writer.writeheader()
+        writer.writerows(datasets)
+    print(f"Saved {len(datasets)} datasets to {filename}")
+
+
+# Main execution
+if __name__ == "__main__":
+    datasets = scrape_uci_datasets()
+
+    if datasets:
+        print("\nSample datasets:")
+        for dataset in datasets[:3]:
+            print(f"Name: {dataset['name']}")
+            print(f"Description: {dataset['description']}")
+            print(f"Link: {dataset['link']}\n")
+
+        save_to_csv(datasets)
+    else:
+        print("No datasets found.")

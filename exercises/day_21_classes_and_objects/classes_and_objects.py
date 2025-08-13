@@ -96,3 +96,63 @@ print('Standard Deviation: ', data.std())
 print('Variance: ', data.variance())
 print('Frequency Distribution: ', data.freq_dist())
 
+"""Create a class called PersonAccount. It has firstname, lastname, incomes, 
+expenses properties and it has total_income, total_expense, account_info, add_income, 
+add_expense and account_balance methods. Incomes is a set of incomes and its description. 
+The same goes for expenses."""
+
+class PersonAccount():
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.incomes = {}
+        self.expenses = {}
+
+    def total_income(self):
+        return sum(self.incomes.values())
+
+    def total_expense(self):
+        return sum(self.expenses.values())
+
+    def account_info(self):
+
+        info = f"Account Holder: {self.firstname} {self.lastname}\n"
+        info += f"Total Income: ${self.total_income():,.2f}\n"
+        info += f"Total Expenses: ${self.total_expense():,.2f}\n"
+        info += f"Current Balance: ${self.account_balance():,.2f}\n"
+        info += "\nIncome Details:\n"
+        for desc, amount in self.incomes.items():
+            info += f"- {desc}: ${amount:,.2f}\n"
+        info += "\nExpense Details:\n"
+        for desc, amount in self.expenses.items():
+            info += f"- {desc}: ${amount:,.2f}\n"
+        return info
+
+    def add_income(self, description, amount):
+
+        if description in self.incomes:
+            self.incomes[description] += amount
+        else:
+            self.incomes[description] = amount
+
+    def add_expense(self, description, amount):
+
+        if description in self.expenses:
+            self.expenses[description] += amount
+        else:
+            self.expenses[description] = amount
+
+    def account_balance(self):
+
+        return self.total_income() - self.total_expense()
+
+
+person = PersonAccount("yosef", "Teshome")
+person.add_income("Salary", 5000)
+person.add_income("Bonus", 1000)
+person.add_expense("Rent", 1500)
+person.add_expense("Groceries", 300)
+person.add_expense("Utilities", 200)
+
+print(person.account_info())
+print(f"Account Balance: ${person.account_balance():,.2f}")

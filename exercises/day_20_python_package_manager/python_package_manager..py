@@ -1,10 +1,10 @@
 import requests # importing the request module
 import math
-import requests
 from bs4 import BeautifulSoup
-
-def url_reader(url):
-
+import itertools
+def url_reader():
+    
+    url = "https://www.gutenberg.org/cache/epub/1112/pg1112.txt"
     response = requests.get(url) # opening a network and fetching a data
     print(response)
     print(response.status_code) # status code, success:200
@@ -132,21 +132,28 @@ def read_countries_api():
 def read_ucl_content():
     url = "https://archive.ics.uci.edu/datasets"
     resp = requests.get(url)
-    soup = BeautifulSoup(resp.content, "html.parser")
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
 
-    # This page uses expandable sections for each dataset
     datasets = []
-    for section in soup.find_all("div", class_="dataset-item"):
-        title = section.find("p", class_="dataset-heading").get_text(strip=True)
-        info = section.find("p", class_="dataset-description").get_text(strip=True)
-        datasets.append({"name": title, "description": info})
+    # Find all headings that start with '## ' (i.e., <h2> in HTML)
+    for header in soup.find_all("h2"):
+        title = header.get_text(strip=True)
+        # The description likely follows in one or more sibling <p> tags
+        desc_parts = []
+        for sibling in itertools.islice(header.next_siblings, 0, 4):
+            if sibling.name == "p":
+                desc_parts.append(sibling.get_text(strip=True))
+            # Stop if we reach the next header
+            if sibling.name and sibling.name.startswith("h"):
+                break
+        description = " ".join(desc_parts)
+        datasets.append({"name": title, "description": description})
 
-    # Display some examples
+    # Print first five results
     for ds in datasets[:5]:
         print(ds)
     
-
-
 
 
 
@@ -158,3 +165,4 @@ if __name__ == "__main__":
     print(get_life_span(cat_data))
     print(frequency_table(cat_data))
     read_countries_api()
+    read_ucl_content()

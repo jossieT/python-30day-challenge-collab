@@ -1,119 +1,86 @@
-from random import random, randint
+import random
 import string
+#1. Writ a function which generates a six digit/character random_user_id
 
-#Exercises: Day 12
-#Exercises: Level 1
-#1. Writ a function which generates a six digit/character random_user_id.
-def random_user_id():
-    chars = string.ascii_letters + string.digits
-    random_id = ''
-    for char in range(6):
-        index = randint(0, len(chars) - 1)
-        random_id += chars[index]
-    return random_id
-print(random_user_id())
+def random_user_id(length:int):
+    characters = string.ascii_letters + string.digits  # A-Z, a-z, 0-9
+    return ''.join(random.choices(characters, k=length))
 
-#2. Modify the previous task. Declare a function named user_id_gen_by_user.
-# It doesn’t take any parameters but it takes two inputs using input().
-# One of the inputs is the number of characters and the second input is
-# the number of IDs which are supposed to be generated.
 def user_id_gen_by_user():
-    chars = string.ascii_letters + string.digits
-    id_list = []
-    num_of_chars = int(input("Enter number of chars: "))
-    num_of_ids = int(input("Enter number of ids: "))
-    for i in range(num_of_ids):
-        random_id = ''
-        for char in range(num_of_chars):
-            index = randint(0, len(chars) - 1)
-            random_id += chars[index]
-        id_list.append(random_id)
-        print(random_id)
-    return id_list
-print(user_id_gen_by_user())
-
-#3. Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
+    num1 = int(input("How many random id's do you want to generate:"))
+    num2 = int(input("How many characters do you want to include in your id:"))
+    print("#Output:")
+    i = 0
+    for _ in range(num1):
+        print(f'#{random_user_id(num2)}')
+        i += 1
+#3.Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
 def rgb_color_gen():
-    rgb_color = []
-    for i in range(3):
-        value = randint(0, 255)
-        rgb_color.append(value)
-    return f"rgb({rgb_color[0]},{rgb_color[1]},{rgb_color[2]})"
-print(rgb_color_gen())
-#Exercises: Level 2
-#1. Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array
-# (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols,
+    rgb_colors = []
+    for _ in range(3):
+        color_value = random.randint(0, 255)
+        rgb_colors.append(color_value)
+    return f"rgb{tuple(rgb_colors)}"
+
+
+# Exercises: Level 2
+#1. Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array 
+# (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 
 # 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
-def list_of_hexa_colors():
-    hexa_chars = "0123456789abcdef"
-    hex_vals = ''
-    for i in range(6):
-        index = randint(0, len(hexa_chars) - 1)
-        hex_vals += hexa_chars[index]
-    return f"#{hex_vals}"
-print(list_of_hexa_colors())
 
+def list_of_hexa_colors(num_colors):
+    hex_colors = []
+    for _ in range(num_colors):
+        hex_color = f"#{random.randint(0, 0xFFFFFF):06x}"
+        hex_colors.append(hex_color)
+    return hex_colors
 #2. Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
-def list_of_rgb_colors(n):
-    rgb_list = []
-    for num in range(n):
-        rgb_color = []
-        for i in range(3):
-            value = randint(0, 255)
-            rgb_color.append(value)
-        rgb_list.append(f"rgb({rgb_color[0]},{rgb_color[1]},{rgb_color[2]})")
-    return rgb_list
-print(list_of_rgb_colors(2))
 
+def list_of_rgb_colors(num_colors):
+    rgb_colors = []
+    for _ in range(num_colors):
+        rgb_color = rgb_color_gen()
+        rgb_colors.append(rgb_color)
+    return rgb_colors
 #3. Write a function generate_colors which can generate any number of hexa or rgb colors.
-def generate_colors(type_of_color, number):
-    hexa_val_list = []
-    rgb_list = []
-
-    if type_of_color == 'rgb':
-        for i in range(number):
-            rgb_color = []
-            for _ in range(3):
-                value = randint(0, 255)
-                rgb_color.append(value)
-            rgb_list.append(f"rgb({rgb_color[0]},{rgb_color[1]},{rgb_color[2]})")
-        return rgb_list
-
-    elif type_of_color == 'hexa':
-        hexa_chars = "0123456789abcdef"
-        for i in range(number):
-            hex_vals = ''
-            for _ in range(6):
-                index = randint(0, len(hexa_chars) - 1)
-                hex_vals += hexa_chars[index]
-            hexa_val_list.append(f"#{hex_vals}")
-        return hexa_val_list
-
-    else:
-        return ["Invalid color type"]
-
-print(generate_colors('hexa', 3))
-print(generate_colors('hexa', 1))
-print(generate_colors('rgb', 3))
-print(generate_colors('rgb', 1))
-
-#Exercises: Level 3
-#1. Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled
-def shuffle_list(lst):
-    for i in range(len(lst) - 1, 0, -1):
-        j = randint(0, i)
-        lst[i], lst[j] = lst[j], lst[i]
-    return lst
-
-#2. Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
-def unique_random():
-    unique_list = []
-    while len(unique_list) < 7:
-        num = randint(0, 9)
-        if num in unique_list:
-            continue
-        else: unique_list.append(num)
-    return unique_list
-print(unique_random())
+def generate_colors(num_colors, color_type):
+    try:
+        if color_type == "hex":
+            return f"Generated Colors (Hex): {list_of_hexa_colors(num_colors)}"
+        elif color_type == "rgb":
+            return f"Generated Colors (RGB): {list_of_rgb_colors(num_colors)}"
+        elif color_type == 'done':
+            return
+        else:
+                raise ValueError("Invalid color type.")
+    except ValueError as e:
+        print("ValueError: Please choose 'hex' or 'rgb'.")
 
 
+# Exercises: Level 3
+#1. Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
+def shuffle_list(input_list):
+    shuffled_list = input_list[:]
+    random.shuffle(shuffled_list)
+    return shuffled_list
+#2. Write a function which returns an array of seven random numbers in a range of 0-9. 
+# All the numbers must be unique.
+def unique_random_numbers():
+    return random.sample(range(10), 7)
+
+
+
+if __name__ == "__main__":
+    # Example usage of the functions
+    user_id_gen_by_user()
+    print(rgb_color_gen())
+    print("Hexadecimal Colors:", list_of_hexa_colors(5))
+    print("RGB Colors:", list_of_rgb_colors(5))
+    while True:
+        color_type = input("Please enter 'hex' or 'rgb': ").strip().lower()
+
+        print(generate_colors(5, color_type))
+        if color_type == 'done':
+            break
+    print("Shuffled List:", shuffle_list([1, 2, 3, 4, 5]))
+    print("Unique Random Numbers:", unique_random_numbers())

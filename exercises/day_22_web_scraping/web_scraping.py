@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+import json
+
 
 # Exercises: Day 22
 #Scrape the following website and store the data as json file(url = 'http://www.bu.edu/president/boston-university-facts-stats/').
@@ -75,7 +77,88 @@ def scrape_bu_facts():
 
 # Run the scraper
 scrape_bu_facts()
+#Extract the table in this url (https://archive.ics.uci.edu/ml/datasets.php) and change it to a json file
 
+
+def scrape_uci_datasets_to_json():
+    url = 'https://archive.ics.uci.edu/ml/datasets.php'
+
+    try:
+        # Set headers to mimic a browser
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+
+        # Fetch the page
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+
+        # Parse the HTML
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # Find the main table - it has cellpadding="3" attribute
+        table = soup.find('table', {'cellpadding': '3'})
+        if not table:
+            print("Main dataset table not found")
+            return None
+
+        # Extract table headers
+        headers = []
+        header_row = table.find('tr')
+        if header_row:
+            headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
+
+        # Extract table data
+        datasets = []
+        for row in table.find_all('tr')[1:]:  # Skip header row
+            cells = row.find_all('td')
+            if not cells:
+                continue
+
+            # Create a dictionary for each dataset
+            dataset = {}
+            for i, cell in enumerate(cells):
+                # Use header text as key if available, otherwise use column index
+                key = headers[i] if i < len(headers) else f"Column_{i}"
+
+                # Extract links if they exist
+                links = [a['href'] for a in cell.find_all('a', href=True)]
+                text = cell.get_text(strip=True)
+
+                # Store both text and links
+                dataset[key] = {
+                    'text': text,
+                    'links': links
+                }
+
+            datasets.append(dataset)
+
+        # Prepare the final JSON structure
+        result = {
+            'source': url,
+            'retrieved_at': requests.utils.quote(str(response.headers.get('Date', ''))),
+            'datasets_count': len(datasets),
+            'datasets': datasets
+        }
+
+        # Save to JSON file
+        with open('uci_datasets.json', 'w', encoding='utf-8') as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+
+        print(f"Successfully saved {len(datasets)} datasets to uci_datasets.json")
+        return result
+
+    except requests.exceptions.RequestException as e:
+        print(f"Network error: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
+    return None
+
+
+# Run the scraper
+scrape_uci_datasets_to_json()
+#Scrape the presidents table and store the data as json(https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States).
+# The table is not very structured and the scrapping may take very long time.
 url = 'https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States'
 
 

@@ -1,0 +1,55 @@
+{
+  "Undergraduate": {
+    "Computer Science": [
+      "Data Structures",
+      "Algorithms",
+      "Operating Systems",
+      "Database Systems",
+      "Computer Networks"
+    ],
+    "Information Technology": [
+      "Web Technologies",
+      "Networking Fundamentals",
+      "Database Management",
+      "IT Project Management"
+    ],
+    "Software Engineering": [
+      "Software Design",
+      "Agile Development",
+      "Software Testing",
+      "Requirements Engineering"
+    ],
+    "Data Science": [
+      "Statistics",
+      "Python for Data Science",
+      "Data Mining",
+      "Machine Learning Basics"
+    ]
+  },
+  "Postgraduate": {
+    "Data Analytics": [
+      "Advanced Statistics",
+      "Big Data Technologies",
+      "Data Visualization",
+      "Predictive Modeling"
+    ],
+    "Cyber Security": [
+      "Cryptography",
+      "Network Security",
+      "Digital Forensics",
+      "Cyber Law"
+    ],
+    "Cloud Computing": [
+      "Cloud Architecture",
+      "AWS & Azure Fundamentals",
+      "DevOps",
+      "Scalable Systems"
+    ],
+    "AI and Machine Learning": [
+      "Deep Learning",
+      "NLP",
+      "Reinforcement Learning",
+      "AI Ethics"
+    ]
+  }
+}

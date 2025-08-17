@@ -7,3 +7,21 @@
 *.war
 *.ear
 *.db
+
+# Virtual environment
+venv/
+.venv/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# IDE & Editor files
+.vscode/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Environment variables
+.env
